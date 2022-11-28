@@ -1,0 +1,252 @@
+
+body {    
+    overflow: hidden;
+}
+
+.Menu, .instMenu{
+    position:fixed;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+
+
+.Containermenu{
+    background-image: url("menju.png");
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1.5rem;
+    width: 800px;
+    height: 600px;
+    text-align: center;
+    color: black;
+}
+
+.instMenuContainer{
+    background-color: rgb(112, 152, 212);
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1.5rem;
+    width: 800px;
+    height: 600px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.gameover{
+    position:fixed;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    background-color: rgb(187, 226, 236);
+}
+
+.playarea{
+    position:fixed;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+
+}
+
+.first_level{
+    
+    
+    padding: 1.5rem;
+    width: 800px;
+    height: 600px;
+    text-align: center;
+    color: rgb(46, 95, 110);
+    border: black solid 5px;
+}
+
+.levels{
+    position:fixed;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   
+   
+}
+
+.level_container{
+    border: black solid 5px;
+    padding: 1.5rem;
+    width: 800px;
+    height: 600px;
+    text-align: center;
+    color: rgb(46, 95, 110);
+}
+
+.gameOverContainer{
+    background-color: rgb(187, 145, 145);
+    
+    padding: 1.5rem;
+    width: 800px;
+    height: 600px;
+    text-align: center;
+    color: rgb(88, 1, 1);
+}
+
+.gameOverContainer h1{
+  
+    padding-top: 200px;
+}
+
+.playButton, .homeButton{
+    outline: 0;
+    border: none;
+    margin-bottom: 20px;
+    background-color: rgb(131, 206, 216);
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+    border-radius: 10px;
+}
+.levelone{
+    outline: 0;
+    border: none;
+    margin-bottom: 20px;
+    background-color: rgb(131, 206, 216);
+    width: 10%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+    border-radius: 10px;
+}
+
+.playButton:hover, .homeButton:hover, .levelone:hover{
+    background-color: rgb(85, 3, 3);
+}
+
+.back{
+    outline: 0;
+    border: none;
+    margin-bottom: 20px;
+    background-color: rgb(131, 206, 216);
+    width: 100px;
+    
+    color: white;
+    border-radius: 10px;
+}
+
+.back:hover{
+    background-color: rgb(161, 26, 16);
+}
+
+
+
+.menuOptions{
+    position: relative;
+    top:5%;
+}
+
+#startButton{
+    margin-top: 200px;
+    background-color: rgb(253, 253, 253);
+    border: 5px solid rgb(112, 1, 1);
+    font-size: 50px;
+    border-radius: 10px;
+    width:300px; 
+    overflow: hidden;
+}
+
+#optionsbutton{
+   
+    margin-top: 20px;
+    background-color: rgb(253, 253, 253);
+    border: 5px solid rgb(112, 1, 1);
+    font-size: 50px;
+    border-radius: 10px;
+    width:300px;
+}
+
+#audioButton{
+    
+    margin-top: 500px;
+    margin-right: 1080px;
+    position:absolute;
+    top:0;
+    right:0;
+    padding: 25px;
+    background-image: url(soundicon.png);
+}
+
+#instOptions{
+    
+    
+    position: relative;
+    top:5%;
+
+}
+
+#insn{
+    position: relative;
+    margin-bottom: 100px;
+    font-size: 50px;
+    
+}
+
+.textcombat{
+    font-size:30px ;
+    padding-top: 50px;
+    padding-right: 400px;
+}
+
+.snowman{
+    width: 100px;
+    height: 40px;
+    padding-bottom: 60px;
+    padding-right: 20px;
+}
+
+.icecube{
+    width: 150px;
+    height: 150px;
+    
+}
+
+.snowflake{
+    width: 150px;
+    height: 100px;
+    padding-bottom: 30px;
+
+}
+
+.textenemies{
+    font-size:30px ;
+    padding-top: 50px;
+    padding-right: 400px;
+}
+
+.flames{
+    width: 200px;
+    height: 100px;
+}
+
+.right {
+    float:right;
+   }
+   .canvas {
+    float:left;
+    margin-right: 10px;
+    background:url(tower_background.png);
+   }
+   .tower {
+    display:inline-block;
+    padding: 5px;
+    border: 1px solid;
+   }

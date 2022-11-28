@@ -1,0 +1,10 @@
+;f;1979;honda;56.533;86.406;88.697;53.266;48.505
+Tanvir Hunter Gia;o;1972;ferrari;147.39;81.423;28.776;120.128;43.703
+Timur Adam Zaynab;m;;ferrari;90.485;5.222;148.515;53.462;90.585
+Timur Adam Zaynab;m;-5;ferrari;90.485;5.222;148.515;53.462;90.585
+Travers Williams Branch;f;1980;mini;29.397;132.296;142.57;39.336;117.248
+Underwood Chaney Prentice;m;1943;porsche;;;;;
+
+Vickers Klay-Olson;f;1946;bugatti;a;b;c;33.902;120.233
+SomZlyVstup
+Wang Ben;m;1991;porsche;18.631;-0.001;86.016;36.914;-4

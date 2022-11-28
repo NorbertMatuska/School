@@ -1,0 +1,23 @@
+READ 1	//1	l(n) + l(1)
+
+Begin:
+	LOAD 1	//log10(n)+2	l(1) + l(n-1)
+	JZERO End	//log10(n)+2	l(n-1)
+	DIV =10	//log10(n)+1	l(10) + l(n-1)
+	STORE 2	//log10(n)+1	l(2) + l(n-1)
+	MULT =10	//log10(n)+1	l(10) + l(n-1)
+	STORE 3	//log10(n)+1	l(3) + l(n-1)
+	LOAD 1	//log10(n)+1	l(1) + l(n-1)
+	SUB 3		//log10(n)+1	l(3) + l(n-1)
+	STORE 4	//log10(n)+1	l(4) + l(n-1)
+	LOAD 5	//log10(n)+1	l(5) + l(n-1)
+	MULT =10	//log10(n)+1	l(10) + l(n-1)
+	ADD 4		//log10(n)+1	l(4) + l(n-1)
+	STORE 5	//log10(n)+1	l(5) + l(n-1)
+	LOAD 1	//log10(n)+1	l(1) + l(n-1)
+	DIV =10	//log10(n)+1	l(10) + l(n-1)
+	STORE 1	//log10(n)+1	l(1) + l(n-1)
+	JUMP Begin	//log10(n)+1	1
+End:
+	WRITE 5	//1	l(5) + l(n)
+	HALT		//1

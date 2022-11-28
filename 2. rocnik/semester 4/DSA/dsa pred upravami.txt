@@ -1,0 +1,271 @@
+#include "bdd.h"
+
+int power(int power) {
+    int result = 1;
+
+    for (int i = 1; i <= power; i++) {
+        result *= 2;
+    }
+    return result;
+}
+
+int calculate_variables_count(char *vector) {
+    int vector_length = (int) strlen(vector), var_amount = 0;
+
+    for (int i = 2; i <= vector_length; i *= 2) {
+        var_amount++;
+    }
+    return var_amount;
+}
+
+PBDD BDD_init (char *bfunkcia) {
+    PBDD bdd = malloc(sizeof(BDD));
+
+    bdd->variables_count = calculate_variables_count(bfunkcia);
+    bdd->vector = malloc(sizeof(char)*strlen(bfunkcia)+1);
+    strcpy(bdd->vector, bfunkcia);
+    bdd->vector[strlen(bfunkcia)+1] = '\0';
+
+    bdd->height = bdd->variables_count + 1;
+    bdd->root = NULL;
+    return bdd;
+}
+
+PBDD_NODE BDD_create_node(char *vector_substring) {
+    PBDD_NODE bdd_node = malloc(sizeof(BDD_NODE));
+    bdd_node->vector_substring = malloc(sizeof(char)* strlen(vector_substring)+1);
+    strcpy(bdd_node->vector_substring,vector_substring);
+    return bdd_node;
+}
+
+void BDD_create_nodes(PBDD bdd, PBDD_NODE root, char *vector) {
+    if (strlen(vector) < 2) {
+        root->right = NULL;
+        root->left = NULL;
+        return;
+    }
+
+    int vector_length = (int) strlen(vector);
+    int vector_length_substring = vector_length / 2;
+
+    char *vector_left = malloc(vector_length_substring+1);
+    memcpy(vector_left, vector, vector_length_substring);
+    vector_left[vector_length_substring] = '\0';
+    root->left = BDD_create_node(vector_left);
+    BDD_create_nodes(bdd, root->left, vector_left);
+    free(vector_left);
+
+    char *vector_right = malloc(vector_length_substring+1);
+    memcpy(vector_right, vector+vector_length_substring, vector_length_substring);
+    vector_right[vector_length_substring] = '\0';
+    root->right = BDD_create_node(vector_right);
+    BDD_create_nodes(bdd, root->right, vector_right);
+    free(vector_right);
+}
+
+PBDD BDD_create(char *bfunkcia) {
+    PBDD bdd = BDD_init(bfunkcia);
+    bdd->root = malloc(sizeof(BDD_NODE));
+    bdd->root = BDD_create_node(bfunkcia);
+
+    BDD_create_nodes(bdd, bdd->root, bfunkcia);
+    return bdd;
+}
+
+char BDD_use(PBDD bdd, char *vstup) {
+    PBDD_NODE temp = bdd->root;
+
+    for (int x = 0, i = 1; i < bdd->height; i++, x++) {
+        if(vstup[x] == '1') {
+            temp = temp->right;
+        }
+        else if(vstup[x] == '0') {
+            temp = temp->left;
+        }
+        else {
+            return -1;
+        }
+    }
+    return *temp->vector_substring;
+}
+PBDD_NODE *init(char *bfunkcia) {
+    int p, log = log2(strlen(bfunkcia));
+    PBDD_NODE *hashtable = malloc(sizeof(PBDD_NODE)*log);
+
+    for(int i = 0; i < log; i++) {
+        p = power(i);
+        hashtable[i] = malloc(sizeof(BDD_NODE)*p);
+        for(int o = 0; o < p; o++) {
+            hashtable[i][o].lvl = -1;
+        }
+    }
+    return hashtable;
+}
+
+
+PBDD ROBDD_create(char *bfunkcia, int *one, int *zero) {
+    int height = 2;
+
+    PBDD_NODE *hashtable = init(bfunkcia);
+    PBDD_NODE node = malloc(sizeof(BDD_NODE));
+    PBDD bdd = malloc(sizeof(BDD));
+
+    build_ROBDD(node, bfunkcia, 0, &hashtable, &height, one, zero);
+    bdd->root = hashtable[0];
+    bdd->height = height;
+    bdd->variables_count = log2(strlen(bfunkcia));
+
+    return bdd;
+}
+
+PBDD_NODE build_ROBDD(PBDD_NODE parent, char *bfunkcia, int lvl, PBDD_NODE **hashtable, int *height, int *one, int *zero) {
+    int h, h_size = power(lvl), flag;
+    parent->lvl = lvl;
+
+    if(strlen(bfunkcia) > 2) {
+        PBDD_NODE child1 = malloc(sizeof(BDD_NODE));
+        PBDD_NODE child2 = malloc(sizeof(BDD_NODE));
+
+        char *s1 = malloc(sizeof(char) * strlen(bfunkcia));
+        char *s2 = malloc(sizeof(char) * strlen(bfunkcia));
+        //rozdelenie vektora na 2 casti
+        strncpy(s1, bfunkcia, strlen(bfunkcia)/2);
+        s1[strlen(bfunkcia)/2] = '\0';
+        strncpy(s2, bfunkcia + strlen(bfunkcia) / 2, strlen(bfunkcia) - strlen(bfunkcia) / 2);
+        s2[strlen(bfunkcia) / 2] = '\0';
+
+        //vytvorenie rootov a do kazdeho posleme jednu polovicu z vektora
+        parent->left = build_ROBDD(child1, s1, lvl + 1, hashtable, height, one, zero);
+        parent->right = build_ROBDD(child2, s2, lvl + 1, hashtable, height, one, zero);
+
+        //redukcia typu S - korene su ten isty uzol
+        if (parent->right == parent->left) {
+            if(lvl == 0){
+                hashInsert(parent, hashtable,0, lvl);
+            }
+            return parent->right;
+        }
+        else {
+            //redukcia typu I - if uz rovnaky uzol existuje
+            flag = 1;
+            h = findHashIndex(parent, hashtable, lvl, h_size, &flag);
+
+            if(h != -1) {
+                hashInsert(parent, hashtable, h, lvl);
+                (*height) += 1;
+                return &(*hashtable)[lvl][h];
+            }
+            return &(*hashtable)[lvl][flag];
+        }
+    }
+    else {
+        //vytvorenie a redukovanie prvkov na poslednej urovni == lvl
+        PBDD_NODE child = malloc(sizeof(BDD_NODE));
+        child->lvl = lvl;
+
+        //[0] je na lavo cize false
+        if(bfunkcia[0] == '0') {
+            child->left = zero;
+        }
+        else {
+            child->left = one;
+        }
+
+        if(bfunkcia[1] == '0') {
+            child->right = zero;
+        }
+        else {
+            child->right = one;
+        }
+
+        if (child->right == child->left) {
+            return child->right;
+        }
+        flag = 1;
+        h = findHashIndex(child, hashtable, lvl, h_size, &flag);
+
+        if (h != -1) {
+            hashInsert(child, hashtable, h, lvl);
+            (*height) += 1;
+            return &(*hashtable)[lvl][h];
+        }
+        return &(*hashtable)[lvl][flag];
+    }
+}
+
+void hashInsert(PBDD_NODE node, PBDD_NODE **hashtable, int h, int lvl) {
+    (*hashtable)[lvl][h].right = node->right;
+    (*hashtable)[lvl][h].left = node->left;
+    (*hashtable)[lvl][h].lvl = node->lvl;
+}
+
+int findHashIndex(PBDD_NODE node, PBDD_NODE **hashtable, int lvl, int h_size, int *flag) {
+    //ziska hash index podla pointera right a left root
+    int h = (getHash(node->left) >> 1 + getHash(node->right)) % h_size;
+    if(h == -1) {
+        printf("NULL pointer in hash\n");
+        return -2;
+    }
+    //zistujeme zhodu
+    while((*hashtable)[lvl][h].lvl != -1) {
+        if ((*hashtable)[lvl][h].left == node->left && (*hashtable)[lvl][h].right == node->right) {
+            *flag = h;
+            return -1;
+        }
+        h = (h + 1) % h_size;
+    }
+    return h;
+}
+//vrati hash z pointra
+int getHash(void* ptr) {
+    if (ptr != NULL) {
+
+        int value = (int)ptr;
+        value = ~value + (value << 11);
+        value = value ^ (value >> 7);
+        value = value + (value << 2);
+        value = value ^ (value >> 5);
+        value = value * 33;
+        value = value ^ (value >> 17);
+        return value;
+    }
+    return -1;
+}
+
+
+
+char *generate_random_binary_string(int n, char *vector) {
+    for (int i = 0; i < n; i++) {
+        vector[i] = ((int)rand() % 2) ? '1' : '0';
+    }
+    vector[n] = '\0';
+
+    return vector;
+}
+
+char *n_bit_string(int n, int k) {
+    char *vector = malloc(k * sizeof(char)+1);
+
+    memset(vector, '0', k);
+    int i = 1;
+
+    while(n > 0) {
+        vector[k-i] = (!(n % 2)) ? '0' : '1';
+        n = n / 2;
+        i++;
+    }
+    vector[k] = '\0';
+    return vector;
+}
+
+void deallocate_bdd(PBDD_NODE bdd) {
+    if (bdd == NULL) {
+        return;
+    }
+
+    deallocate_bdd((*bdd).left);
+    deallocate_bdd((*bdd).right);
+
+    free(bdd->vector_substring);
+    free(bdd);
+}

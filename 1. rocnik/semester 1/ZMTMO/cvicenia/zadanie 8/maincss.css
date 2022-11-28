@@ -1,0 +1,73 @@
+.topnav {
+  background-image: linear-gradient(to right, white, yellow);
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.article {
+    display: flex;
+}
+
+.article img {
+    border: 10px solid yellow;
+}
+
+
+
+#section1 {
+    display: flex;
+    width: 300px;
+    position: relative;
+    float: left;
+   
+    font-weight: bold;
+    color: blue;
+    text-align: left;
+}
+
+#section2 {
+    display: flex;
+    width: 300px;
+    position: relative;
+    float: left;
+   
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
+
+#section3 {
+    display: flex;
+    width: 300px;
+    position: relative;
+    float: left;
+   
+    font-weight: bold;
+    color: green;
+    text-align: right;
+}
+
+@media only screen and (max-width: 700px) and (min-width: 451px) {
+.article {flex-wrap: wrap; font-style: italic;}
+.article img {border: 2px dotted yellow;}
+#section1 {width:50%;}
+#section2 {color: red; text-align: left; width:50%;}
+#section3 {color: blue; text-align: left; width: 100%;}
+}
+@media only screen and (max-width: 450px) {.article {display: block;}
+body {background-image: linear-gradient(to right, blue, black); }
+.article {}
+.article img {border: none;}
+#section1 {background-color: blue; text-decoration: underline; color: green; text-align: center; padding: 30px}
+#section2 {background-color: white; text-decoration: underline; color: green; text-align: center; padding: 30px}
+#section3 {background-color: yellow; text-decoration: underline; color: green; text-align: center; padding: 30px}
+}
+

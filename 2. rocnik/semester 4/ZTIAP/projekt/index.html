@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>ON & OFF</title>
+    </head>
+
+    <body>
+        <canvas></canvas>
+        <script src="main.js" async></script>
+        <div class="Menu" id="Menu">
+            <div class="Container">
+                <div id="menuOpt">
+                    <div>
+                        <form action="prototype.html">
+                        <button type="submit" id="startButton" value="PLAY" onclick="play1()">PLAY</button>
+                        </form>
+
+                        <audio id="sound1" src="deathsound.mp3"></audio>
+                    </div>
+                    <div><button id="optButton">OPTIONS</button></div>
+                </div>
+            </div>
+            <button id="audioButton" value="PLAY" onclick="play()"></button>
+            <audio id="sound" src='Preload.mp3'></audio>
+        </div>
+
+        <div class="instMenu" id="modalIMenu">
+            <div class="instMenuContainer">
+                <div id="instOptions">
+                    <img class="OPTIONS" src="OPTIONS.png">
+                </div>
+                <div class="characters">
+                    <img class="textchar" src="MAIN-CHARACTER.png">
+                    <img class="postavicky" src="postavicky.png">
+                </div>
+                <div class="soul">
+                    <img class="textsoul" src="COLLECTIBLE-SOULS.png">
+                    <img class="souls" src="soul.png">
+                    
+                </div>
+                <button class="back" id="backButton">b</button>
+            </div>
+        </div>
+
+        <div class="gameover" id="gameover">
+            <!--<div class="gameOverContainer">
+                <div class="gameoverimg" id="gameoverimg">
+                    <img class="death" src="deathscreen.png">
+                </div>
+                <button class="playButton" id="retryButton">Retry</button>
+                <button class="homeButton" id="homeButton">Menu</button>
+            </div>-->
+        </div>
+    </body>
+</html>

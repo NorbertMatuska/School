@@ -1,0 +1,39 @@
+Neuralink Corporation is a neurotechnology company developing implantable brain–machine interfaces (BMIs)
+and founded by Elon Musk and 8 other partners. Neuralink was launched in 2016 and was first publicly reported in March 2017.
+In April 2017, Neuralink announced that it was aiming to make devices to treat serious brain diseases in the short-term,
+with the eventual goal of human enhancement, sometimes called transhumanism.
+Since its founding, the company has hired several high-profile neuroscientists from various universities.
+By July 2019, it had received $158 million in funding (of which $100 million was from Musk) 
+and was employing a staff of 90 employees.
+Musk has said lots of things about his company for example that Neuralink’s devices could enable “superhuman cognition,”
+enable paralyzed people to operate smartphones or robotic limbs with their minds someday, and “solve” autism and schizophrenia.
+All of that is yet without evidence
+
+The probes, are inserted into the brain through an automated process performed by a surgical robot that they've developed. 
+Each probe consists of an area of wires that contains electrodes capable of locating electrical signals in the brain,
+and a sensory area where the wire interacts with an electronic system that allows amplification of the brain signal. 
+Each probe contains 48 or 96 wires, each of which contains 32 independent electrodes,
+making a system of up to 3072 electrodes per formation.
+composed mostly of a biocompatible material, with a thin gold or platinum conductor.
+
+Neuralink says they have developed a robot capable of rapidly inserting many flexible probes into the brain, 
+which may avoid the problems of tissue damage associated with larger and more rigid probes.
+This robot has an insertion head with a 40 μm diameter needle made of tungsten-rhenium
+made to transport and insert individual probes. The robot is capable of inserting up to six wires (192 electrodes) per minute.
+
+Neuralink has developed an Application-Specific Integrated Circuit (ASIC) to create a 1,536-channel recording system.
+It's kind of difficult to explain how it works but It aims to convert information obtained from neurons
+into an understandable binary code in order to achieve greater understanding of brain function
+and the ability to stimulate these neurons back. Currently, electrodes are still too big to record the firing of individual neurons, 
+so they can record only the firing of a group of neurons; 
+Neuralink representatives believe this issue might get mitigated algorithmically, 
+but it's computationally expensive and does not produce exact results.
+
+Basically the monkey, she's called Pager, had two Neuralink devices implanted in his brain six weeks ago in an area called motor cortex
+which coordinates hand and arm movement. And in the first half, the monkey learned how to use the joystick in exchange for banana smoothie
+and Neuralink recorded its brain activity. And later, the monkey learned how to move the cursor, or MindPong without the joystick.
+
+This is a great example for how the technology can be used because Musk announced that The first Neuralink product will enable someone 
+with paralysis to use a smartphone with their mind faster than someone using thumbs and that the
+Later versions will be able to shunt signals from Neuralinks in brain to Neuralinks in body motor/sensory neuron clusters,
+thus enabling, for example, paraplegics to walk again.
