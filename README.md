@@ -1,4 +1,4 @@
-#Everything I've done on FIIT
+# Everything I've done on FIIT
 Every study material I have used and every project I ever made for FIIT is right here in this repository, divided into semesters and subjects.
 Feel free to browse but note that it's a __mess__.
 _Thank you for visiting_
