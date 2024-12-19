@@ -1,0 +1,3 @@
+C:/Users/42190/OneDrive/Desktop/skola/1. rocnik/semester 2/ZPRPR2/projekt2/cmake-build-debug/CMakeFiles/projekt2.dir
+C:/Users/42190/OneDrive/Desktop/skola/1. rocnik/semester 2/ZPRPR2/projekt2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/42190/OneDrive/Desktop/skola/1. rocnik/semester 2/ZPRPR2/projekt2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

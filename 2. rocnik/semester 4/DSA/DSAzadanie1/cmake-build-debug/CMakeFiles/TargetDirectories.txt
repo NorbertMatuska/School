@@ -1,0 +1,3 @@
+C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir
+C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

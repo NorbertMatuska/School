@@ -1,0 +1,136 @@
+1. GET /v2/posts/:post id/users
+SELECT
+    u.id,
+    u.reputation,
+    u.creationdate,
+    u.displayname,
+    u.lastaccessdate,
+    u.websiteurl,
+    u.location,
+    u.aboutme,
+    u.views,
+    u.upvotes,
+    u.downvotes,
+    u.profileimageurl,
+    u.age,
+    u.accountid
+FROM
+    users u
+INNER JOIN comments c ON u.id = c.userid
+WHERE
+    c.postid = 1819157
+ORDER BY
+    c.creationdate DESC
+
+2.
+SELECT 
+    u.id,
+    u.reputation,
+    u.creationdate,
+    u.displayname,
+    u.lastaccessdate,
+    u.websiteurl,
+    u.location,
+    u.aboutme,
+    u.views,
+    u.upvotes,
+    u.downvotes,
+    u.profileimageurl,
+    u.age,
+    u.accountid
+FROM 
+    users u
+WHERE 
+    EXISTS (
+        SELECT 1 
+        FROM comments c 
+        INNER JOIN posts p ON c.postid = p.id
+        WHERE (p.owneruserid = 1076348 OR c.userid = 1076348)
+        AND u.id = c.userid
+    )
+ORDER BY 
+    u.creationdate;
+
+3.
+WITH PostDay AS (
+    SELECT
+        EXTRACT(DOW FROM p.creationdate) AS day_of_week,
+        COUNT(DISTINCT p.id) AS day_count_tag
+    FROM posts p
+    JOIN post_tags pt ON p.id = pt.post_id
+    JOIN tags t ON pt.tag_id = t.id
+    WHERE t.tagname = 'linux'
+    GROUP BY day_of_week
+),
+TotalPosts AS (
+    SELECT
+        EXTRACT(DOW FROM p.creationdate) AS day_of_week,
+        COUNT(DISTINCT p.id) AS day_count
+    FROM posts p
+    JOIN post_tags pt ON p.id = pt.post_id
+    JOIN tags t ON pt.tag_id = t.id
+    GROUP BY day_of_week
+)
+SELECT
+    CASE
+        WHEN pd.day_of_week = 0 THEN 'sunday'
+        WHEN pd.day_of_week = 1 THEN 'monday'
+        WHEN pd.day_of_week = 2 THEN 'tuesday'
+        WHEN pd.day_of_week = 3 THEN 'wednesday'
+        WHEN pd.day_of_week = 4 THEN 'thursday'
+        WHEN pd.day_of_week = 5 THEN 'friday'
+        WHEN pd.day_of_week = 6 THEN 'saturday'
+    END AS day,
+	ROUND((pd.day_count_tag::NUMERIC/tp.day_count::NUMERIC) * 100, 2) AS day_count
+
+FROM PostDay pd
+JOIN TotalPosts tp ON tp.day_of_week = pd.day_of_week
+
+ORDER BY pd.day_of_week;
+4.
+SELECT
+    id,
+    creationdate,
+    viewcount,
+    lasteditdate,
+    lastactivitydate,
+    title,
+    closeddate,
+    ROUND(EXTRACT(EPOCH FROM (closeddate - creationdate)) / 60, 2) AS duration
+FROM
+    posts
+WHERE
+    closeddate IS NOT NULL
+    AND EXTRACT(EPOCH FROM (closeddate - creationdate)) / 60 <= 5
+ORDER BY
+    creationdate DESC
+LIMIT
+    2;
+
+5.
+SELECT
+    p.id,
+    p.creationdate,
+    p.viewcount,
+    p.lasteditdate,
+    p.lastactivitydate,
+    p.title,
+    p.body,
+    p.answercount,
+    p.closeddate,
+    ARRAY_AGG(t.tagname) AS tags
+FROM
+    posts p
+JOIN
+    post_tags pt ON p.id = pt.post_id
+JOIN
+    tags t ON pt.tag_id = t.id
+WHERE
+    (LOWER(UNACCENT(p.title)) LIKE '%' || LOWER(UNACCENT('linux')) || '%' OR
+    LOWER(UNACCENT(p.body)) LIKE '%' || LOWER(UNACCENT('linux')) || '%')
+GROUP BY
+    p.id
+ORDER BY
+    p.creationdate DESC
+LIMIT
+    1;

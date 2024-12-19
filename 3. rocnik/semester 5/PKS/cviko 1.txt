@@ -1,0 +1,23 @@
+12
+kolkokrat sa mi tam vojde najvyssia mocnina dvojky ktora sa tam vojde
+cize 2^3 je 8 zmesti sa cize 1
+2^2 je 4 zmesti sa cize 1 
+uz som zakodoval vsetko cize
+1100 
+????????????????????????????????????????? dobehni si to
+
+----------------
+16-ková sústava
+----------------
+12 viem zakódovať ako C lebo 0,1,2,3,4,5,6,7,8,9,A, B, C, D, E, F
+						 10 11 12 13 14 15
+38
+16ka je tam dvakrát
+cize 2
+a 6 je tam tiez takze 6
+26 je hexadecimalne zapisane cislo 38
+
+
+Alexander Valach na youtube
+IPv4 subnetting playlist
+CCNA - uvod do sieti

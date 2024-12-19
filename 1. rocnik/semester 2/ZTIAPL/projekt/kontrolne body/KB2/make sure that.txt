@@ -1,0 +1,17 @@
+Dear students,
+
+For KB2 make sure to check following (unless you already did it properly in KB1):
+
+* don't mix together classes, functions and attributes
+
+* for attributes describe the expected ranges of values (a number can be any number or between 0 and 1.0)
+
+* for attributes describe the meaning of possible values unless it is obvious ( `boolean isFacingLeft` is obvious, `boolean rotation` is not)
+
+* describe what your functions do, unless it is obvious
+
+* every object that must appear on the screen requires a function to draw it
+
+* if an object must react to collisions, there must be a function to check for said collisions somewhere
+
+* don't just write "there will be various power-ups", describe what exactly those power-ups do (enemy types, obstacles, etc.)

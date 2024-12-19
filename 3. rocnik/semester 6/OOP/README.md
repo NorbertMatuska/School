@@ -1,0 +1,4 @@
+// new_project súbor je pre intelliJ, projekt súbor je exportnutý pre eclipse
+
+WinoVote
+Cieľom bude vytvoriť interaktívnu aplikáciu pre someliérov, kde uživateľia budu mať možnosť hlasovať za najlepšie exotické vína. Uživateľ sa bude môct prihlásiť do systému, ktorý si ho zapamätá. Bude možnosť prihlásiť sa aj ako vinárska firma. V aplikácii bude taktiež možné zakúpiť si premium, ktorý dá uživatelovi možnosť hlasovať za viacero obľúbených vínnych produktov, pridávať vlastné nominácie a podobne. Tým pádom bude potrebné mať aj virtuálnu peňaženku v systéme, do ktorej bude možné dobíjať si kredity. Po nejakom časovom cykle sa vyhodnotí najlepší produkt podľa počtu hlasov. Bude možné prihlásiť sa ako admin, ktorý bude môct monitorovať príspevky, vyhodnocovať hlasovanie. Ak výherné víno bolo pridané uživateľom, daný uživateľ bude mať možnosť dostať bonusové hlasy alebo prioritné miesto pri ďaľšom kole hlasovaní alebo finančné obdarovanie do jeho virtuálnej peňaženky. 

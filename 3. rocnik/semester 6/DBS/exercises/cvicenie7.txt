@@ -1,0 +1,134 @@
+1.
+SELECT
+  EXTRACT(MONTH FROM m.measured_at) AS month,
+  ROUND(AVG(m.temperature), 2) AS average_temperature
+FROM
+  measurements m
+JOIN
+  sensors s ON m.sensor_id = s.id
+JOIN
+  cities c ON s.city_id = c.id
+WHERE
+  EXTRACT(YEAR FROM m.measured_at) = 2015
+GROUP BY
+  month
+ORDER BY
+  month;
+
+2.
+WITH MonthlyAverages AS (
+  SELECT
+    EXTRACT(MONTH FROM measured_at) AS month,
+    AVG(temperature) AS monthly_avg_temp
+  FROM measurements
+  GROUP BY month
+),
+OverallAverage AS (
+  SELECT AVG(temperature) AS overall_avg_temp
+  FROM measurements
+)
+SELECT
+  ma.month,
+  ROUND(ma.monthly_avg_temp, 2) AS avg_temp
+FROM MonthlyAverages ma, OverallAverage oa
+WHERE ma.monthly_avg_temp > oa.overall_avg_temp
+ORDER BY ma.month;
+
+3.
+SELECT
+  r.name AS region_name,
+  COUNT(s.id) AS sensor_count
+FROM
+  Regions r
+LEFT JOIN cities c ON r.id = c.region_id
+LEFT JOIN sensors s ON c.id = s.city_id
+GROUP BY
+  r.name
+ORDER BY
+  sensor_count DESC;
+
+4.
+-- standard deviation STDDEV
+SELECT
+  c.name AS city_name,
+  STDDEV_POP(m.temperature) AS temp_stddev
+FROM
+  cities c
+JOIN
+  sensors s ON c.id = s.city_id
+JOIN
+  measurements m ON s.id = m.sensor_id
+GROUP BY
+  c.name
+ORDER BY
+  temp_stddev ASC
+LIMIT 1;
+
+5.
+SELECT
+  c.name AS city_name,
+  COUNT(s.id) AS sensor_count
+FROM
+  cities c
+LEFT JOIN sensors s ON c.id = s.city_id
+GROUP BY
+  c.name
+ORDER BY
+  sensor_count DESC;
+
+6.
+SELECT DISTINCT ON (r.name)
+  r.name AS region_name,
+  c.name AS city_name
+FROM
+  regions r
+JOIN
+  cities c ON c.region_id = r.id
+JOIN
+  sensors s ON s.city_id = c.id
+JOIN
+  measurements m ON m.sensor_id = s.id
+ORDER BY
+  r.name, m.temperature DESC;
+
+7.
+
+8.
+WITH RegionalAverages AS (
+  SELECT
+    r.id,
+    r.name,
+    AVG(m.temperature) AS avg_temperature
+  FROM
+    regions r
+  JOIN
+    cities c ON r.id = c.region_id
+  JOIN
+    sensors s ON c.id = s.city_id
+  JOIN
+    measurements m ON s.id = m.sensor_id
+  GROUP BY
+    r.id
+),
+TemperatureDifferences AS (
+  SELECT
+    a.name AS region_a,
+    b.name AS region_b,
+    ABS(a.avg_temperature - b.avg_temperature) AS temperature_difference
+  FROM
+    RegionalAverages a
+  CROSS JOIN
+    RegionalAverages b
+  WHERE
+    a.id < b.id
+)
+SELECT
+  LEAST(region_a, region_b) AS lowest,
+  GREATEST(region_a, region_b) AS highest
+FROM
+  TemperatureDifferences
+ORDER BY
+  temperature_difference DESC,
+  lowest,
+  highest
+LIMIT 1;

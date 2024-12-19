@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>tower defense</title>
+ <meta name="description" content="A tower defense game made with JavaScript and Canvas.">
+<style>
+.right {
+ float:right;
+}
+.canvas {
+ float:left;
+ margin-right: 10px;
+ background:url(tower_background.png);
+}
+.tower {
+ display:inline-block;
+ padding: 5px;
+ border: 1px solid;
+}
+body{
+    background-color: rgb(194, 238, 238);
+}
+</style>
+</head>
+<body>
+<canvas id='canvas' class='canvas' width='600' height='600' style='border:1px solid #000;'></canvas> 
+<div style="display:none;">
+ <img id="tower1img" src="snehulak.png" width="40" height="40">
+ <img id="tower2img" src="icecube.png" width="40" height="40">
+ <img id="tower3img" src="snowflake.png" width="40" height="40">
+ 
+</div>
+<div class='tower' style='background-color: rgb(113, 225, 233);' onclick='changeTower(0);'>
+    <img src="snehuliak.png" width="50" height="50">
+    Snowman<br>
+    cost: 50$
+</div>
+<p>
+<div class='tower' style='background-color: rgb(64, 114, 155);' onclick='changeTower(1);'>
+<img src="icecube.png~" width="50" height="50">
+Ice cube<br>
+cost: 75$
+</div>
+<p>
+<div class='tower' style='background-color:rgb(6, 23, 53);' onclick='changeTower(2);'>
+    <img src="snowflake.png" width="50" height="50">
+    snowflake<br>
+    cost: 75$
+</div>
+<br>
+<div style='width:600px;'>
+Not Killed enemies: <span id='attackersScore'>0</span>
+<span class='right'>Money: <span id='money'>250</span></span>
+<br>
+Killed enemies: <span id='stopped'>0</span>
+</div>
+<button class="back_menu" ><a href="index.html">MENU</a></button> 
+
+<script type='text/javascript' src='mainLoop.js'></script>
+<script type='text/javascript' src='attackerUnits.js'></script>
+<script type='text/javascript' src='towerUnits.js'></script>
+<script type='text/javascript' src='bullets.js'></script>
+<script type='text/javascript' src='mouseClick.js'></script>
+</body>
+</html>

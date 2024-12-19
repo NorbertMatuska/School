@@ -1,0 +1,34 @@
+/* CSS Document */
+#links {
+        color:green;
+        border-style: ridge;
+        border-color: black;     
+}
+a {
+        text-decoration:none;
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  background-color: darkgreen;
+  text-decoration: none;
+}
+
+p:nth-child(odd) {
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+}
+p:nth-child(even) {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+}
+
+img.one {
+        transform: scaleX(2) translateX(100px);
+}

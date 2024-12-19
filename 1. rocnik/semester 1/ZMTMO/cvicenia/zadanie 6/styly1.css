@@ -1,0 +1,55 @@
+/* CSS Document */
+* {
+  box-sizing: border-box;
+}
+
+#hlavicka {
+        
+        background-color:red;
+}
+
+html {
+        height: 100%;
+}
+
+body { 
+        width:100%;
+        height: 100%; 
+}
+
+#first {
+        width: 33%;
+        float:left;
+        flex: 1;
+        height:200px;
+        background-color:blue;
+        text-align: left;
+}
+
+#second {
+        float:right
+        width: 66%;
+        flex: 2;
+        height: 200px;
+        background-color:green;
+        text-align:right;
+}
+
+img.one {
+        width:25%;
+        height:25%;
+        
+}
+
+#third {
+        text-align: center;
+}    
+
+footer {
+        text-align: right;
+}
+
+#end {
+        border-style: groove;
+        border-color:#ff9900;
+}

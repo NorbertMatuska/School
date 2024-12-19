@@ -1,0 +1,26 @@
+.root {
+    -fx-padding: 20px;
+    -fx-alignment: center;
+}
+
+.label {
+    -fx-text-fill: navy;
+    -fx-font-size: 14px;
+}
+
+.text-field {
+    -fx-font-size: 14px;
+    -fx-padding: 4px;
+}
+
+.button {
+    -fx-background-color: lightblue;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 15px;
+}
+
+.button:hover {
+    -fx-background-color: darkblue;
+    -fx-cursor: hand;
+}

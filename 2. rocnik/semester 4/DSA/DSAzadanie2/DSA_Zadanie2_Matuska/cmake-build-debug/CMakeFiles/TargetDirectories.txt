@@ -1,0 +1,3 @@
+C:/Users/42190/OneDrive/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie2/DSA_Zadanie2_Matuska/cmake-build-debug/CMakeFiles/DSAzadanie2.dir
+C:/Users/42190/OneDrive/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie2/DSA_Zadanie2_Matuska/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/42190/OneDrive/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie2/DSA_Zadanie2_Matuska/cmake-build-debug/CMakeFiles/rebuild_cache.dir

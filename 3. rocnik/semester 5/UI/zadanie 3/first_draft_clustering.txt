@@ -1,0 +1,109 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.cluster import KMeans
+from scipy.spatial.distance import cdist, pdist
+from sklearn.metrics import pairwise_distances_argmin_min
+from scipy.cluster.hierarchy import linkage, fcluster
+
+
+# Function to generate initial 20 random points
+def generate_initial_points(num_points, lower_bound, upper_bound):
+    return np.random.randint(lower_bound, upper_bound, size=(num_points, 2))
+
+
+# Function to generate next points based on previous points
+def generate_next_points(initial_points, num_points, offset_range, bounds):
+    next_points = []
+    for _ in range(num_points):
+        # Select a random point from initial_points
+        base_point = initial_points[np.random.randint(len(initial_points))]
+
+        # Generating offsets
+        x_offset = np.random.randint(-offset_range, offset_range + 1)
+        y_offset = np.random.randint(-offset_range, offset_range + 1)
+
+        # Adjust the point to be within bounds
+        new_point = np.clip(base_point + np.array([x_offset, y_offset]), bounds[0], bounds[1])
+        next_points.append(new_point)
+
+        # Add new point to initial_points for further selection
+        initial_points = np.vstack([initial_points, new_point])
+
+    return np.array(next_points)
+
+
+# Function to perform k-means clustering
+def kmeans_clustering(points, num_clusters, centroid_type='centroid'):
+    if centroid_type == 'centroid':
+        model = KMeans(n_clusters=num_clusters, init='k-means++')
+    elif centroid_type == 'medoid':
+        model = KMeans(n_clusters=num_clusters, init='random')
+    model.fit(points)
+    labels = model.labels_
+
+    # Compute average distance from centroid or medoid
+    if centroid_type == 'centroid':
+        centers = model.cluster_centers_
+        avg_distances = [np.mean(np.linalg.norm(points[labels == i] - centers[i], axis=1)) for i in range(num_clusters)]
+    elif centroid_type == 'medoid':
+        closest, _ = pairwise_distances_argmin_min(model.cluster_centers_, points)
+        medoids = points[closest]
+        avg_distances = [np.mean(np.linalg.norm(points[labels == i] - medoids[i], axis=1)) for i in range(num_clusters)]
+
+    return labels, avg_distances
+
+
+# Function to perform divisive clustering
+def divisive_clustering(points, num_clusters):
+    linked = linkage(points, method='centroid')
+    labels = fcluster(linked, num_clusters, criterion='maxclust')
+
+    # Compute centroids and average distance from centroids
+    centroids = np.array([points[labels == i].mean(axis=0) for i in range(1, num_clusters + 1)])
+    avg_distances = [np.mean(np.linalg.norm(points[labels == i] - centroids[i - 1], axis=1)) for i in range(1, num_clusters + 1)]
+
+    return labels, avg_distances
+
+
+# Function to plot clusters
+def plot_clusters(points, labels, title):
+    plt.figure(figsize=(10, 8))
+    plt.scatter(points[:, 0], points[:, 1], c=labels, cmap='viridis', marker='o')
+    plt.title(title)
+    plt.xlabel('X Coordinate')
+    plt.ylabel('Y Coordinate')
+    plt.grid(True)
+    plt.show()
+
+
+# Initialize parameters
+num_initial_points = 20
+num_next_points = 40000
+bounds = (-5000, 5000)
+offset_range = 100
+num_clusters = 3  # Assuming k for k-means
+
+# Generate initial points
+initial_points = generate_initial_points(num_initial_points, -5000, 5000)
+
+# Generate next points
+next_points = generate_next_points(initial_points, num_next_points, offset_range, bounds)
+
+# Combine initial and next points
+all_points = np.vstack([initial_points, next_points])
+
+# Perform k-means clustering with centroid
+kmeans_labels_centroid, kmeans_avg_distances_centroid = kmeans_clustering(all_points, num_clusters, 'centroid')
+plot_clusters(all_points, kmeans_labels_centroid, 'K-Means Clustering with Centroid')
+
+# Perform k-means clustering with medoid
+kmeans_labels_medoid, kmeans_avg_distances_medoid = kmeans_clustering(all_points, num_clusters, 'medoid')
+plot_clusters(all_points, kmeans_labels_medoid, 'K-Means Clustering with Medoid')
+
+# Perform divisive clustering
+divisive_labels, divisive_avg_distances = divisive_clustering(all_points, num_clusters)
+plot_clusters(all_points, divisive_labels, 'Divisive Clustering')
+
+# Display average distances for each cluster
+kmeans_avg_distances_centroid, kmeans_avg_distances_medoid, divisive_avg_distances
+

@@ -1,0 +1,126 @@
+1.
+
+
+2.
+SELECT 
+    comments_data.post_id,
+    comments_data.title,
+    comments_data.displayname,
+    comments_data.text,
+    comments_data.post_created_at,
+    comments_data.created_at,
+    comments_data.diff,
+    TO_CHAR('00:00:00'::time + (comments_data.sum_diff / comments_data.count_diff) * '1 second'::interval, 'HH24:MI:SS.US') AS avg
+FROM (
+    SELECT 
+        post_data.post_id,
+        post_data.title,
+        post_data.displayname,
+        post_data.text,
+        post_data.post_created_at,
+        post_data.created_at,
+        TO_CHAR(post_data.created_at - LAG(post_data.created_at) OVER (
+            PARTITION BY post_data.post_id ORDER BY post_data.created_at
+        ), 'HH24:MI:SS.US') AS diff,
+        SUM(post_data.diff) OVER (
+            PARTITION BY post_data.post_id ORDER BY post_data.created_at
+            ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+        ) as sum_diff,
+        COUNT(post_data.diff) OVER (
+            PARTITION BY post_data.post_id ORDER BY post_data.created_at
+            ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+        ) as count_diff
+    FROM (
+        SELECT 
+            posts.id AS post_id,
+            posts.title,
+            users.displayname,
+            comments.text,
+            posts.creationdate AS post_created_at,
+            comments.creationdate AS created_at,
+            EXTRACT(EPOCH FROM (comments.creationdate - LAG(comments.creationdate) OVER (
+                PARTITION BY comments.postid ORDER BY comments.creationdate
+            ))) AS diff
+        FROM 
+            comments
+        JOIN 
+            posts ON comments.postid = posts.id
+        JOIN 
+            users ON comments.userid = users.id
+        JOIN 
+            post_tags ON posts.id = post_tags.post_id
+        JOIN 
+            tags ON post_tags.tag_id = tags.id
+        WHERE 
+            tags.tagname = 'networking' -- Replace with the actual tag name
+    ) AS post_data
+    JOIN (
+        SELECT 
+            postid 
+        FROM 
+            comments
+        GROUP BY 
+            postid
+        HAVING 
+            COUNT(*) > 40
+    ) AS popular_posts ON post_data.post_id = popular_posts.postid
+    WHERE 
+        post_data.diff IS NOT NULL
+) AS comments_data
+ORDER BY 
+    comments_data.post_id, comments_data.created_at;
+
+3.
+SELECT
+    sub.post_id,
+    sub.comment_id,
+    sub.displayname,
+    sub.post_body,
+    sub.comment_text,
+    sub.score,
+    sub.creationdate
+FROM (
+    SELECT 
+        p.id as post_id,
+        c.id as comment_id,
+        u.displayname,
+        p.body as post_body,
+        c.text as comment_text,
+        c.score,
+        p.creationdate,
+        ROW_NUMBER() OVER (PARTITION BY p.id ORDER BY c.creationdate ASC) as comment_rank
+    FROM 
+        comments c
+    JOIN 
+        posts p ON p.id = c.postid
+    JOIN 
+        users u ON u.id = c.userid  
+    JOIN 
+        post_tags pt ON p.id = pt.post_id
+    JOIN 
+        tags t ON pt.tag_id = t.id
+    WHERE
+        t.tagname = 'linux'
+) sub
+WHERE 
+    sub.comment_rank = 2
+ORDER BY 
+    sub.creationdate ASC
+LIMIT 1;
+
+
+4.
+SELECT 
+    u.displayname,
+	p.body,
+	p.creationdate
+FROM 
+    posts p
+JOIN 
+    users u ON p.owneruserid = u.id
+WHERE 
+    p.id = 2154 OR p.parentid = 2154
+ORDER BY 
+    p.creationdate ASC
+LIMIT 5;
+

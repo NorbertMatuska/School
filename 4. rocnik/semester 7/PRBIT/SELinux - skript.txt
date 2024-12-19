@@ -1,0 +1,34 @@
+Slajd 1:
+Takže priravil som si prezentáciu na môj projekt zameraný na Security-Enhanced Linux, skrátene SELinux. Ide o pokročilejší bezpečnostný modul pre Linux, ktorý bol pôvodne vyvinutý Národnou bezpečnostnou agentúrou Spojených Štátov. SELinux zavádza koncept povinného riadenia prístupu, takže, procesy a používatelia majú prístup len k tým systémovým zdrojom, ktoré sú vyslovene povolené bezpečnostnými politikami.
+
+V projekte som sa zameral na tri hlavné ciele: pochopiť architektúru SELinuxu a jeho integráciu do systému, implementovať ho na Ubuntu a otestovať jeho schopnosti v reálnom prostredí.
+
+Slajd 2:
+Ako som ž spomínal, SELinux je postavený na princípe povinného riadenia prístupu, čo je oveľa prísnejšie ako tradičné bezpečnostné mechanizmy. Tu neplatí pravidlo, že vlastníci súborov môžu rozhodovať o ich prístupe. Namiesto toho sú pravidlá definované na systémovej úrovni a striktne vynucované.
+
+Kľúčovou funkciou SELinuxu je Type Enforcement, ktorá umožňuje rozdelenie procesov a zdrojov do rôznych domén a typov. Procesy môžu interagovať so zdrojmi iba podľa explicitne povolených pravidiel. Okrem toho SELinux podporuje sandboxovanie, čo znamená, že aplikácie môžu byť izolované tak, aby ich zlyhanie neohrozili celý systém.
+
+Slajd 3:
+Pre implementáciu SELinuxu na Ubuntu som postupoval podľa oficiálnych krokov. Na začiatku bolo potrebné deaktivovať predvolený bezpečnostný modul AppArmor, ktorý je s SELinuxom nekompatibilný, pretože nemôžu existovať da bezpečnostné moduly. Po deaktivácii som nainštaloval potrebné balíčky, ako policycoreutils a selinux-basics, a prešiel som na konfiguráciu SELinuxu.
+
+SELinux funguje v dvoch hlavných režimoch: permissive a enforcing. V režime permissive SELinux nezabraňuje žiadnym akciám, ale zaznamenáva, ktoré z nich by boli blokované. Tento režim je ideálny na testovanie a ladenie politík. V režime enforcing už SELinux aktívne blokuje akcie, ktoré nie sú povolené politikami. Ladenie politík pred prepnutím do režimu enforcing je dosť dôležité, aby sme zabránili nechceným obmedzeniam legitímnych operácií. Ja som na začiatku rovno prepol do enforcing a tým, že som mal Ubuntu cez Oracle VirtualBox, som si zablokoval prístup do systému.
+
+Slajd 4:
+Testovanie SELinuxu bolo zamerané na štyri hlavné oblasti: izoláciu procesov, obmedzenie prístupu sieťových služieb, simuláciu útokov a prispôsobenie bezpečnostných politík.
+
+Prvým krokom bolo testovanie izolácie procesov pomocou sandboxovania. Spúšťal som aplikácie v izolovanom prostredí, a skúšal som pristúpiť k chráneným súborom, ktoré som vytvoril, kde ale SELinux zabránil neoprávnenému prístupu. 
+
+Ďalej som sa zameral na obmedzenie sieťových služieb. Pre FTP server som nastavil politiku, ktorá zakázala prístup k domácim adresárom používateľov. Pri pokuse o prístup sa zobrazila chyba, čo dokázalo účinnosť tejto politiky. Tieto nastavenia je možné meniť pomocou boolovských premenných, ako je ftpd_full_access.
+
+Pri simulácii útokov, ako je buffer overflow, SELinux zabránil spusteniu škodlivého kódu vďaka politikám, ktoré blokujú vykonávanie kódu na zásobníku. To vlastne ukazuje schopnosť ochrániť systém pred zraniteľnosťami aplikácií.
+
+Nakoniec, ale vlastne nie nakoniec lebo som to musel robiť hneď na začiatku, nech sa mi vôbec system spustí, som otestoval vytváranie vlastných politík. Pomocou nástrojov ako audit2allow som generoval pravidlá prispôsobené konkrétnym potrebám aplikácií.
+
+Výsledky testovania ukázali, že SELinux zvyšuje bezpečnosť tým, že poskytuje fakt detailnú kontrolu prístupu a obmedzuje potenciálne škody spôsobené chybami alebo útokmi.
+
+Slajd 5:
+Na záver hodnotím SELinux ako výkonný nástroj na zlepšenie bezpečnosti systému. Hlavné prínosy zahŕňajú detailnú kontrolu nad prístupmi a flexibilitu prispôsobovania politík.
+
+Na druhej strane ale, implementovanie môže byť časovo náročné a zložité. Ak sú politiky nastavené nesprávne, môže dôjsť k narušeniu funkcionality aplikácií. Preto by som odporučil postupnú implementáciu – začať v režime permissive, doladiť politiky a až následne prejsť na režim enforcing.
+
+Celkovo je SELinux skvelým riešením pre organizácie alebo ľudí, ktorý potrebujú vysokú úroveň zabezpečenia, a je to dobrou investíciou do bezpečnosti systému, ak je to naozaj potrebné.

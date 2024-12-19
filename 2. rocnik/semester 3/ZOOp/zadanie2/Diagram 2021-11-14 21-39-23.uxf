@@ -1,0 +1,75 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>0</y><w>210</w><h>90</h></coordinates><panel_attributes>clovek
+--
+- meno : String
+--
++ returnMeno() : String
++ clovek(meno : String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>140</y><w>290</w><h>90</h></coordinates><panel_attributes>zamestnanec
+--
+- IDzamestnanca : int
+--
++ returnIDzamestnanca() : int
++ zamestnanec (meno : String, IDzamestnanca : int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>80</y><w>70</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;50;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>290</y><w>350</w><h>90</h></coordinates><panel_attributes>nosic
+--
+- ovocieNaRuke : int
+--
++ returnOvocieNaRuke() : int
++ nosic(meno : String, IDzamestnanca : int, ovocieNaRuke : int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>220</y><w>60</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;40;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>0</y><w>210</w><h>90</h></coordinates><panel_attributes>zakaznik
+--
+
+--
++ returnMeno() : String
++ zakaznik(meno : String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>30</y><w>60</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;40;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>290</y><w>380</w><h>90</h></coordinates><panel_attributes>obsluhaMlynceku
+--
+- litreVina : int
+--
++ returnLitre() : int
++ obsluhaMlynceku(meno : String, IDzamestnanca : int, litreVina : int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>220</y><w>490</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;470;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>140</y><w>330</w><h>90</h></coordinates><panel_attributes>zberac
+--
+- pozbieraneOvocie : int
+--
++ returnPozbieraneOvocie() : int
++ zberac(meno : String, IDzamestnanca : int, litreVina : int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>170</y><w>150</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>840</x><y>130</y><w>210</w><h>90</h></coordinates><panel_attributes>zber
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>940</x><y>540</y><w>210</w><h>90</h></coordinates><panel_attributes>pivnica
+--
+~ nadoba : int
+~ sud : int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>840</x><y>260</y><w>210</w><h>90</h></coordinates><panel_attributes>mletie
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>840</x><y>390</y><w>210</w><h>90</h></coordinates><panel_attributes>zrenie
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>510</y><w>320</w><h>190</h></coordinates><panel_attributes>vina
+--
+- cukornatost : int
+- typ : String
+- ID : int
+- nazov : String
+--
++ returnCukornatost() : int
++ returnTyp() : String
++ return ID : int
++ returnNazov() : String
++ vina(nazov : String, ID : int, typ : String, cukornatost : int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>330</y><w>620</w><h>270</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>600;250;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>330</y><w>180</w><h>280</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>160;260;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>170</y><w>130</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>110;10;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>300</y><w>80</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>290</y><w>520</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>500;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>510</y><w>540</w><h>250</h></coordinates><panel_attributes>zahrada
+--
+- visna : int
+- ribezla : int
+- konkordia : int
+- samorod : int
+- frankovka : int
+- alibernet : int
+--
++ celkovaUroda(konkordia : int, samorod : int, frankovka : int, alibernet : int, ribezla : int, visna : int)
++ returnKonkordia() : int
++ returnSamorod() : int
++ returnFrankovka() : int
++ returnAlibernet() : int
++ returnRibezla() : int
++ returnVisna() : int
++ zahrada(konkordia : int, samorod : int, frankovka : int, alibernet : int, ribezla : int, visna : int)</panel_attributes><additional_attributes></additional_attributes></element></diagram>

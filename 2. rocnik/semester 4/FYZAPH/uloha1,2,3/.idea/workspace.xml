@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6f7b3e74-f743-49df-80b0-fa6b47752104" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../1. rocnik/semester 1/ZMTMO/projekt/306588" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../1. rocnik/semester 1/ZMTMO/projekt/ZMTMO_-_Pravidla_&amp;_Ulohy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../1. rocnik/semester 1/ZPrPr1/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../1. rocnik/semester 1/ZPrPr1/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../1. rocnik/semester 1/ZPrPr1/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../1. rocnik/semester 1/ZPrPr1/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../1. rocnik/semester 2/ZPRPR2/projekt2/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../1. rocnik/semester 2/ZPRPR2/projekt2/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../1. rocnik/semester 2/ZPRPR2/projekt2/cmake-build-debug/projekt2.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../1. rocnik/semester 2/ZTIAPL/projekt/ZTIAP_-_Pravidla_&amp;_Ulohy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../1. rocnik/semester 2/ZTIAPL/projekt/ZTIAP_-_Pravidla_&amp;_Ulohy_-_Eng.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../;(.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/ChainHash.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/DSAzadanie1/ChainHash.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/.cmake/api/v1/reply/cache-v2-5f3d4b8d3b988cf436d1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-56dbcf429c49b8947fcd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-57bb4f4791c352045bc1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/.cmake/api/v1/reply/index-2023-12-09T14-27-16-0141.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/.cmake/api/v1/reply/target-DSAzadanie1-Debug-57a08afbebfb05318f83.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-ccd11615e1cb376204fc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/3.22.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/3.22.3/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/3.22.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir/ChainHash.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir/ChainHash.c.obj.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir/LinearHash.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir/LinearHash.c.obj.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir/SplayTree1.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir/SplayTree1.c.obj.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir/compiler_depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir/main.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir/main.c.obj.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/DSAzadanie1.dir/objects.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/DSAzadanie1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/DSAzadanie1.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/DSAzadanie1/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie2/DSA_Zadanie2_Matuska/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/DSAzadanie2/DSA_Zadanie2_Matuska/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/ADM-Prednáška č1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/new adm/priklad_01_-_tlac_4x.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/new adm/priklad_02_-_tlac_4x.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/new adm/priklad_03_-_tlac_4x.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/new adm/priklad_04_-_tlac_4x.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/zhrnutia a priklady/ADM21-22-Prehlad1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/zhrnutia a priklady/ADM21-22-Prehlad2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/zhrnutia a priklady/ADM21-22-Prehlad3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/zhrnutia a priklady/ADM21-22-Prehlad4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/zhrnutia a priklady/ADM21-22-Prehlad5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/zhrnutia a priklady/ADM21-22-Prehlad6.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/zhrnutia a priklady/ADM21-22-Prehlad7.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/zhrnutia a priklady/ADM21-22-Prehlad8.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/zhrnutia a priklady/ADM21-22-Priklady1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/zhrnutia a priklady/ADM21-22-Priklady2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/zhrnutia a priklady/ADM21-22-Priklady3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/zhrnutia a priklady/ADM21-22-Priklady4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/zhrnutia a priklady/ADM21-22-Priklady5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/zhrnutia a priklady/ADM21-22-Priklady6.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/zhrnutia a priklady/ADM21-22-Priklady7.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/zhrnutia a priklady/ADM21-22-Priklady8.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/ADM/zhrnutia a priklady/zhrnutia a priklady.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/MA/MA-prednáška č.1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/MA/MAskuska_vsetkySkupiny.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/MA/MatAnalyzaTest1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/MA/MatAnalyzaTest2018.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/MA/MatAnalyzaTest2019.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/MA/skuskaMA.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/OS/OS prednaska c1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/OS/OS prednaska c2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/OS/OS prednaska c3.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/OS/Referát z OS.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/OS/Referát z OS.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/OS/cviko 1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/OS/prednasky/01.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/OS/prednasky/02.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/OS/prednasky/03.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/OS/prednasky/04.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/OS/trestna_uloha_signaly.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/OS/uloha 9. tyzden signaly.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/OS/uloha 9. tyzden signaly.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/OS/uloha_signaly.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PIKT/PIKT prednaska c1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PIKT/PIKT prednaska c2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PIKT/PIKT_co_si_na_internete_legalne_nekupim_Matuska.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PIKT/SPRIEVODCA_PIKT_2022.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PIKT/group presentation/skript.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/PKS prednáška č1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/PKS prednáška č2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/PKS prednáška č3.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/REST_API.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/Skuska/PKS_skusky2022/skuska_OT/PKS2021_RT2.pcapng" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/Skuska/PKS_skusky2022/skuska_OT/PKS_komunikacia.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/Skuska/PKS_skusky2022/skuska_OT/skuska_OT_48b.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/Skuska/PKS_skusky2022/skuska_RT/PKS2021_RT2.pcapng" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/Skuska/PKS_skusky2022/skuska_RT/PKS_komunikacia_2021.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/Skuska/PKS_skusky2022/skuska_RT/pks_skuska_2022_20b.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/Skuska/PKS_skusky2022/skuska_RT/skuska_RT_1_23b.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/Skuska/PKS_skusky2022/skuska_RT/skuska_RT_2_43b.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/Skuska/PKS_skusky2022/skuska_RT/skuska_RT_3_vela.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/Skuska/PKS_skusky2022/skuska_RT/skuska_RT_4_neviem.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/analyze_frames.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/cvicenia/Cvičenie 2 - config+verejnaIP.pkt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/cvicenia/Cvičenie 2 - net_config+verejna_IP.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/cvicenia/Matuska_PKS_CV3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/cvicenia/Matuska_PKSuloha.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/cvicenia/xmatuskan.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/cviko 1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/pks-course" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/prednaska priklad.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/prednasky/10_Smerovanie.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/prednasky/1_Uvodna_prednaska_2023-24.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/prednasky/2_2023_Fyzicka_a_MAC_vrstva_copy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/prednasky/3_2022_Ethernet_linkova.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/prednasky/4_2023_IP-UDP-CRC.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/prednasky/5_2023_Subnetting.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/prednasky/6_2023_TCP.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/prednasky/7_TCP_Congestion_control.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/prednasky/9_2020_HTTP_DNS.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/prednasky/9_2023_IPv6.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/prednasky/WiFi_BT_2023.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/PKS_analyzator_dokumentacia.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/PKS_analyzator_dokumentacia.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/documentation/documentation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/flowchart pks.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/pks_ARP.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/pks_ICMP_a_frag.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/pks_TFTP.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/protocols/config.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/protocols/ethertype.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/protocols/icmp_types.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/protocols/ipv4_protocol.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/protocols/pid.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/protocols/sap.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/protocols/tcp_protocol.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/protocols/udp_protocol.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/uloha1/xmatuskan.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/eth-1.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/eth-2.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/eth-3.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/eth-4.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/eth-5.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/eth-6.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/eth-7.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/eth-8.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/eth-9.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/ip-ethereal-trace-1.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-1.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-10.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-11.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-12.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-13.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-14.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-15.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-16.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-17.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-18.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-19.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-2.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-20.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-21.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-22.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-23.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-24.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-25.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-26.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-27.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-3.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-4.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-5.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-6.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-7.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-8.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace-9.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/vzorky_pcap_na_analyzu/trace_ip_nad_20_B.pcap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie1/xmatuskan.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie2/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie2/navrh_protokolu.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie2/navrh_protokolu.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie2/xmatuskan.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PKS/zadanie2/xmatuskan.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/PPGSO-prednaska c1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/PPGSO-prednaska c2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/PPGSO-prednaska c3.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/PPGSO-prednaska c4.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/cmake/FindGLEW.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/cmake/FindGLFW3.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/cmake/FindGLM.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/cmake/add_resources.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/cmake/bin2c.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/data/asteroid.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/data/asteroid.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/data/corsair.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/data/corsair.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/data/cube.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/data/explosion.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/data/lena.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/data/lena.raw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/data/missile.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/data/missile.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/data/quad.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/data/sphere.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/data/sphere.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/data/stars.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/copying_glew.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/copying_glfw.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/copying_glm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/GL/eglew.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/GL/glew.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/GL/glxew.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/GL/wglew.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/GLFW/glfw3.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/GLFW/glfw3native.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/common.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/dummy.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_common.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_common.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_common_simd.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_exponential.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_exponential.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_exponential_simd.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_geometric.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_geometric.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_geometric_simd.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_integer.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_integer.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_integer_simd.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_matrix.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_matrix.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_matrix_simd.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_packing.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_packing.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_packing_simd.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_trigonometric.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_trigonometric.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_trigonometric_simd.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_vector_relational.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_vector_relational.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/func_vector_relational_simd.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/glm.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/precision.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/setup.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_float.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_gentype.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_gentype.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_half.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_half.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_int.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat2x2.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat2x2.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat2x3.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat2x3.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat2x4.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat2x4.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat3x2.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat3x2.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat3x3.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat3x3.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat3x4.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat3x4.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat4x2.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat4x2.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat4x3.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat4x3.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat4x4.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat4x4.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_mat4x4_simd.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_vec.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_vec.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_vec1.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_vec1.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_vec2.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_vec2.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_vec3.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_vec3.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_vec4.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_vec4.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/detail/type_vec4_simd.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/exponential.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/ext.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/fwd.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/geometric.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/glm.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/bitfield.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/bitfield.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/color_encoding.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/color_space.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/color_space.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/constants.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/constants.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/epsilon.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/epsilon.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/functions.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/functions.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/integer.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/integer.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/matrix_access.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/matrix_access.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/matrix_integer.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/matrix_inverse.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/matrix_inverse.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/matrix_transform.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/matrix_transform.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/noise.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/noise.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/packing.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/packing.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/quaternion.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/quaternion.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/quaternion_simd.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/random.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/random.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/reciprocal.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/reciprocal.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/round.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/round.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/type_aligned.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/type_precision.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/type_precision.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/type_ptr.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/type_ptr.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/ulp.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/ulp.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/vec1.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtc/vec1.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/associated_min_max.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/associated_min_max.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/bit.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/bit.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/closest_point.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/closest_point.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/color_space.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/color_space.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/color_space_YCoCg.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/color_space_YCoCg.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/common.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/common.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/compatibility.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/compatibility.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/component_wise.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/component_wise.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/dual_quaternion.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/dual_quaternion.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/euler_angles.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/euler_angles.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/extend.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/extend.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/extended_min_max.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/extended_min_max.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/fast_exponential.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/fast_exponential.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/fast_square_root.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/fast_square_root.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/fast_trigonometry.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/fast_trigonometry.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/float_notmalize.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/gradient_paint.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/gradient_paint.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/handed_coordinate_space.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/handed_coordinate_space.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/hash.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/hash.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/integer.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/integer.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/intersect.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/intersect.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/io.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/io.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/log_base.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/log_base.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/matrix_cross_product.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/matrix_cross_product.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/matrix_decompose.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/matrix_decompose.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/matrix_interpolation.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/matrix_interpolation.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/matrix_major_storage.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/matrix_major_storage.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/matrix_operation.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/matrix_operation.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/matrix_query.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/matrix_query.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/matrix_transform_2d.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/matrix_transform_2d.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/mixed_product.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/mixed_product.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/norm.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/norm.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/normal.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/normal.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/normalize_dot.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/normalize_dot.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/number_precision.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/number_precision.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/optimum_pow.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/optimum_pow.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/orthonormalize.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/orthonormalize.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/perpendicular.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/perpendicular.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/polar_coordinates.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/polar_coordinates.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/projection.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/projection.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/quaternion.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/quaternion.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/range.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/raw_data.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/raw_data.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/rotate_normalized_axis.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/rotate_normalized_axis.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/rotate_vector.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/rotate_vector.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/scalar_multiplication.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/scalar_relational.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/scalar_relational.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/simd_mat4.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/simd_mat4.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/simd_quat.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/simd_quat.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/simd_vec4.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/simd_vec4.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/spline.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/spline.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/std_based_type.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/std_based_type.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/string_cast.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/string_cast.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/transform.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/transform.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/transform2.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/transform2.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/type_aligned.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/type_aligned.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/type_trait.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/type_trait.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/vector_angle.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/vector_angle.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/vector_query.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/vector_query.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/wrap.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/gtx/wrap.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/integer.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/mat2x2.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/mat2x3.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/mat2x4.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/mat3x2.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/mat3x3.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/mat3x4.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/mat4x2.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/mat4x3.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/mat4x4.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/matrix.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/packing.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/simd/common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/simd/exponential.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/simd/geometric.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/simd/integer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/simd/matrix.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/simd/packing.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/simd/platform.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/simd/trigonometric.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/simd/vector_relational.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/trigonometric.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/vec2.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/vec3.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/vec4.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/include/glm/vector_relational.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/lib/mingw/libglew32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/lib/mingw/libglfw3.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/lib/vc2015/glew32s.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/lib/vc2015/glfw3.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/lib/vc2019/glew32s.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/dependencies/lib/vc2019/glfw3.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/doc/clion_target.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/doc/clion_working_dir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/doc/gl1_gradient.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/doc/gl2_texture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/doc/gl3_animate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/doc/gl4_transform.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/doc/gl5_projection.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/doc/gl6_mesh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/doc/gl7_diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/doc/gl8_framebuffer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/doc/gl9_scene.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/doc/raw1_gradient.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/doc/raw2_raycast.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/doc/raw3_raytrace.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/doc/raw4_raster.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/ppgso/image.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/ppgso/image.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/ppgso/image_bmp.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/ppgso/image_bmp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/ppgso/image_raw.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/ppgso/image_raw.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/ppgso/mesh.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/ppgso/mesh.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/ppgso/ppgso.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/ppgso/shader.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/ppgso/shader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/ppgso/texture.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/ppgso/texture.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/ppgso/tiny_obj_loader.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/ppgso/tiny_obj_loader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/ppgso/window.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/ppgso/window.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/shader/color_frag.glsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/shader/color_vert.glsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/shader/convolution_frag.glsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/shader/convolution_vert.glsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/shader/diffuse_frag.glsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/shader/diffuse_vert.glsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/shader/texture_frag.glsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/shader/texture_vert.glsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl1_gradient/gl1_gradient.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl2_texture/gl2_texture.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl3_animate/gl3_animate.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl4_transform/gl4_transform.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl5_projection/gl5_projection.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl6_mesh/gl6_mesh.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl7_diffuse/gl7_diffuse.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl8_framebuffer/gl8_framebuffer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl9_scene/asteroid.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl9_scene/asteroid.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl9_scene/camera.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl9_scene/camera.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl9_scene/explosion.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl9_scene/explosion.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl9_scene/generator.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl9_scene/generator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl9_scene/gl9_scene.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl9_scene/object.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl9_scene/object.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl9_scene/player.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl9_scene/player.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl9_scene/projectile.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl9_scene/projectile.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl9_scene/scene.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl9_scene/scene.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl9_scene/space.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/gl9_scene/space.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/raw1_gradient/raw1_gradient.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/raw2_raycast/raw2_raycast.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/raw3_raytrace/raw3_raytrace.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/raw4_raster/raw4_raster.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/task1_filter/task1_filter.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/task2_bresenham/task2_bresenham.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/task3_bezier/task3_bezier.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/task4_2dshapes/task4_2dshapes.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/task5_3d_origin/task5_3d_origin.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/task6_bezier_surface/task6_bezier_surface.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/task7_particles/task7_particles.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/PPGSO/ppgso-public/src/tasks.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/Pavol-Navrat---Umela-inteligencia.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/UI cviko 1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/UI prednaska c1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/UI prednaska c2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/UI zadanie 1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/UI_01.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/UI_02.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/zadanie 1 na novo/UI zadanie 1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/zadanie 1 na novo/UI zadanie 1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/zadanie 1 na novo/knights tour tabulky.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/zadanie 1 na novo/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/zadanie 2/UIzadanie2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/zadanie 2/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/zadanie 2/zadanie2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/zadanie 2/zadanie2_doku.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/zadanie 2/zadanie2_doku.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/zadanie 3/Clustering dokumentácia.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/zadanie 3/Clustering dokumentácia.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/zadanie 3/Clustering.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/zadanie 3/first_draft_clustering.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/zadanie 3/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/zadanie 3/zadanie 3.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/zadanie/UI zadanie 1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/zadanie/UI zadanie 1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/UI/zadanie/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3. rocnik/rozvrh.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="3.4" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2oWtbFFwx6QeTozos2DdIhXhyH6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f7b3e74-f743-49df-80b0-fa6b47752104" name="Changes" comment="" />
+      <created>1730997229231</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730997229231</updated>
+      <workItem from="1730997231554" duration="14000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

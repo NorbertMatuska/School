@@ -1,0 +1,86 @@
+% Metódy inžinierskej práce
+
+\documentclass[10pt,twoside,slovak,a4paper]{article}
+
+\usepackage[slovak]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage[IL2]{fontenc} 
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref}
+
+\usepackage{cite}
+%\usepackage{times}
+
+\pagestyle{headings}
+
+\title{Distance learning, factors on motivation and comparison with
+traditional learning \thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2020/21, vedenie: Ing. Zuzana Špitálová}}
+
+\author{Norbert Matuška\\[2pt]
+	{\small Slovenská technická univerzita v Bratislave}\\
+	{\small Fakulta informatiky a informačných technológií}\\
+	{\small \texttt{xmatuskan@stuba.sk}}
+	}
+
+\date{\small 6. november 2020}
+
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The main purpose of this article is to explore distance learning. It shows how such a form of studying or learning can affect student's motivation, energy or even grades, may it be positive or negative. It points to factual data from surveys and scientific works how students can improve motivation and performance. We will also go through some factors that affect students and their initiative or enthusiasm at times like these. This article will also explore the differences between traditional form of learning and distance learning, despite the current COVID-19 events, online and distance courses were popular therefore this work will compare them with traditional learning in general.\\
+
+Keywords:
+\end{abstract}
+
+\clearpage
+\tableofcontents %nevedel som ci je potrebny obsah alebo nie, ale pre istotu som to dal
+\clearpage
+\section{Introduction}
+
+I chose this subject because of the relevance in our current state of learning. With the introduction of distance learning, many of students or even teachers struggled with getting used to this form of education. In my article I will focus on different factors of motivation in distance learning such as interaction between students and teachers, age, computer skill and also suggestions to improve motivation and performance based on the research and scientific work I've gathered. I will also try to compare some forms of distance education with traditional education to see the pros and cons of each respective form. The main purpose of my article is to show how distance learning can affect us in a positive or negative way.
+
+
+
+
+\section{Clarification}
+Before we begin, we need to clarify each form of learning so that it's clear what we're actually exploring and aiming for. First and foremost we need to make clear what we mean by online or distance learning. Online learning is education that takes place over the internet. It is often referred to as "e-learning" among other terms. However, online learning is just one type of distance learning - the umbrella for any learning that takes place across distance and not in a traditional classroom. Distance learning has a long history and there are several types available today, including:\cite{introductiontoonlinelearning}
+\begin{itemize}
+    \item Correspondence Courses: conducted through regular mail with little interaction.
+    \item Telecourses: where content is delivered via radio or television broadcast
+    \item CD-ROM Courses: where the student interacts with a static computer content
+    \item \textbf{Online learning:} Internet based courses offered synchronously and/or asynchronously
+    \item Mobile learning: by means of devices such as cellural phones, PDAs and digital audio players (iPods, MP3 players) 
+    
+\end{itemize}
+\paragraph{Online learning} itself can be also categorized into a plethora of terms to describe the application of digital technologies in learning including distance, online, open, flexible, blended, flipped, mixed and MOOCs (Massive Open Online Courses).\cite{inbook} 
+To help make sense of these terminologies, Bullen and Janes (2007)\cite{Bullen} have conceptualised a continuum of technology use ranging from face-to-face to fully distance environments. E-learning is a common term used to describe anything on this continuum that incorporates digital technologies in the learning process\cite{Nichols}.\\
+\paragraph{Traditional learning} takes place in a classroom setting. There is a trainer who moderates and regulates the flow of information and knowledge. Then, the trainer expects the employees to deepen their knowledge through written exercises at home. Nowadays, technology is incorporated in the classroom more and more. However, in face-to-face instruction scenarios, the primary source of information is still the trainer.\cite{traditionallearning} \\
+In this article, we will focus our attention to comparing the definition of Online learning mentioned above, and traditional learning.
+
+\section{Motivation in online learning}
+As we already know, motivation is a key component when it comes to learning. It can influence what we learn, how we learn and when we choose to learn.\cite{Schunk} It is widely known that a motivated student is more likely to undertake challenging activities, be actively engaged, enjoy and adopt an approach to learning. \\
+Of course, sometimes it is hard to stay motivated. This can become a problem that is difficult to deal with even in traditional learning form and lot of students struggle with it. In my research about online and distance learning (We will go more in-depth about the research in later sections), out of twenty-eight respondents, when asked if they feel motivated during distance learning, twenty people responded that they do not feel motivated. That means that, approximately, seventy-one percent of respondents do not feel motivated and this can be a serious issue.
+
+\section{Survey}
+Part of our research about motivation and online learning was done through a survey. %Total number of respondents to this date (7/11/2020) is 28 but I will update the numbers and charts so we can have a bigger sample of respondents.
+
+\section{Traditional learning versus online learning}
+
+\section{Suggestions and Improvements}
+
+\section{Conclusion}
+
+
+%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
+
+
+\clearpage
+\bibliography{literatura_Matuska}
+\bibliographystyle{unsrt} 
+\end{document}

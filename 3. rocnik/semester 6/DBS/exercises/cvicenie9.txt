@@ -1,0 +1,45 @@
+1.
+SELECT
+  p.name AS patch_version,
+  EXTRACT(EPOCH FROM p.release_date)::INT AS patch_start_date,
+  m.id,
+  ROUND((m.duration / 60.0), 2) AS match_duration
+FROM
+  patches p
+JOIN
+  matches m
+ON
+  m.start_time >= EXTRACT(EPOCH FROM p.release_date)::INT
+ORDER BY
+  p.release_date;
+
+2.
+-- winner column som nenasiel v ziadnej tabulke
+SELECT
+  COALESCE(pl.nick, 'unknown') AS player_nick,
+  h.localized_name AS hero_localized_name,
+  ROUND((m.duration / 60.0), 2) AS match_duration_minutes,
+  (mpd.xp_hero + mpd.xp_creep + mpd.xp_other + mpd.xp_roshan) AS experiences_gained,
+  mpd.level AS level_gained,
+  m.id
+FROM players pl
+JOIN matches_players_details mpd ON pl.id = mpd.player_id
+JOIN heroes h ON mpd.hero_id = h.id
+JOIN matches m ON mpd.match_id = m.id
+WHERE pl.id = 14598;
+
+3.
+SELECT
+  COALESCE(pl.nick, 'unknown') AS player_nick,
+  h.localized_name AS hero_localized_name,
+  m.id,
+  go.subtype AS hero_action,
+  COUNT(go.subtype) AS count
+FROM players pl
+JOIN matches_players_details mpd ON pl.id = mpd.player_id
+JOIN heroes h ON mpd.hero_id = h.id
+JOIN matches m ON mpd.match_id = m.id
+JOIN game_objectives go ON mpd.id = go.match_player_detail_id_1
+WHERE pl.id = 13548
+GROUP BY pl.nick, h.localized_name, m.id, go.subtype;
+

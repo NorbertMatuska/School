@@ -1,0 +1,58 @@
+1.
+SELECT programmers.name, joined_at FROM projects_programmers
+INNER JOIN programmers ON projects_programmers.programmer_id = programmers.id
+2.
+SELECT programmers.name, joined_at FROM projects_programmers
+INNER JOIN programmers ON projects_programmers.programmer_id = programmers.id
+WHERE LEFT(programmers.name, 1) = 'R'
+3.
+SELECT programmers.name, joined_at FROM projects_programmers
+INNER JOIN programmers ON projects_programmers.programmer_id = programmers.id
+WHERE LEFT(programmers.name, 1) = 'R' ORDER BY projects_programmers.joined_at DESC
+LIMIT 1
+4.
+SELECT name FROM programmers
+WHERE CHAR_LENGTH(name) < 12
+5.
+SELECT LEFT(name, 12) FROM programmers
+6.
+SELECT UPPER(REVERSE(name)) FROM programmers
+7.
+SELECT SUBSTRING(name FROM 1 FOR POSITION(' ' IN name) - 1) FROM programmers
+8.
+SELECT programmers.name, joined_at FROM projects_programmers
+INNER JOIN programmers ON projects_programmers.programmer_id = programmers.id
+WHERE EXTRACT(YEAR FROM projects_programmers.joined_at) = 2016
+9.
+SELECT programmers.name, joined_at FROM projects_programmers
+INNER JOIN programmers ON projects_programmers.programmer_id = programmers.id
+WHERE EXTRACT(YEAR FROM projects_programmers.joined_at) = 2016 
+AND EXTRACT(MONTH FROM projects_programmers.joined_at) = 2
+10.
+SELECT programmers.name, '2016-04-01'::date - joined_at AS days_since FROM projects_programmers
+INNER JOIN programmers ON projects_programmers.programmer_id = programmers.id
+11.
+SELECT DISTINCT label FROM languages
+INNER JOIN projects ON languages.id = projects.language_id
+12.
+SELECT DISTINCT label FROM languages
+INNER JOIN projects ON languages.id = projects.language_id
+WHERE EXTRACT(YEAR FROM projects.created_at) = 2014
+13.
+SELECT projects.name FROM languages
+INNER JOIN projects ON languages.id = projects.language_id
+WHERE languages.label = 'ruby' OR languages.label = 'python'
+14.
+SELECT DISTINCT programmers.name 
+FROM programmers
+INNER JOIN projects_programmers ON projects_programmers.programmer_id = programmers.id
+INNER JOIN projects ON projects.id = projects_programmers.project_id
+INNER JOIN languages ON languages.id = projects.language_id
+WHERE languages.label = 'python'
+15.
+SELECT DISTINCT programmers.name 
+FROM programmers
+INNER JOIN projects_programmers ON projects_programmers.programmer_id = programmers.id
+INNER JOIN projects ON projects.id = projects_programmers.project_id
+INNER JOIN languages ON languages.id = projects.language_id
+WHERE languages.label = 'python' AND projects_programmers.owner = 'true'

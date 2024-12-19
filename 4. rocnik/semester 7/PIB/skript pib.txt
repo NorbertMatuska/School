@@ -1,0 +1,48 @@
+Slide 1: Voľne šíriteľné nástroje na obnovu zmazaných súborov
+„Mojou témou sú voľne šíriteľných nástrojov na obnovu zmazaných súborov. V rámci tejto prezentácie sa pozrieme na rôzne typy súborových systémov, ako prebieha proces mazania dát a zameriam sa na tri kľúčové nástroje na obnovu – TestDisk, Recuva a PhotoRec.“
+
+Slide 2: Súborové systémy
+„Pre pochopenie obnovy zmazaných súborov je dôležité vedieť, ako fungujú jednotlivé súborové systémy. V mojom prípade sa zameriame na tri najpoužívanejšie súborové systémy: FAT32, NTFS a EXT4.
+
+FAT32 je jeden z najstarších súborových systémov a používa sa najmä na vymeniteľných médiách, ako sú USB kľúče a pamäťové karty. Má svoje obmedzenia, napríklad maximálnu veľkosť súboru 4 GB, no je jednoduchy a umožňuje relatívne ľahkú obnovu zmazaných dát.
+
+NTFS je moderný súborový systém pre Windows a ponúka pokročilé funkcie, ako je šifrovanie, prístupové práva a denníkovanie, ktoré zvyšujú bezpečnosť a spoľahlivosť pri obnove dát. Používa Master File Table (MFT), čo umožňuje jednoduchšiu správu zmazaných súborov.
+
+EXT4 je používaný na Linuxových systémoch a ponúka výhody ako zníženú fragmentáciu a vyšší výkon. Jeho funkcie, ako extents (rozšírenia), umožňujú efektívnejšie ukladanie dát, no môžu zároveň sťažiť proces obnovy, keďže bloky sú uložené vo väčších celkoch. Taktiež používa dennikovanie a aj funkciu delayed allocation, ktora môže oneskorit fyzicky zapis dát na disk aby zlepšila výkon “
+
+Slide 3: Proces mazania dát
+„Keď v systémoch FAT32, NTFS alebo EXT4 zmažete súbor, dáta samotné nie sú okamžite zmazané. Zmazanie vo FAT32 a NTFS prebieha tak, že sa vymaže odkaz v tabuľke, ale samotné dáta zostanú fyzicky na disku, pokiaľ nebudú prepísané novými dátami. V prípade EXT4 sú bloky označené ako voľné a môžu byť prepísané, ak sa nezaznamenali do denníka.
+
+Tento proces umožňuje obnovu súborov, pretože fyzické dáta môžu zostať na disku aj po ich „vymazaní“. Preto je dôležité neuskutočniť žiadne ďalšie zápisy na disk po zmazaní súborov, ak ich plánujete obnoviť.“
+
+Slide 4: Obnova dát
+„ Každý súborový systém má iné nástroje a mechanizmy, ktoré umožňujú obnoviť zmazané súbory.
+
+FAT32: Obnova je jednoduchšia, pretože dáta sú relatívne priamočiare. Ak súbor nebol ešte prepísaný, väčšina nástrojov len znova vytvorí odkaz do tabuľky.
+NTFS: Používa MFT, ktoré uchováva informácie aj o zmazanych súboroch, čo zvyšuje šance na úspešnú obnovu. Navyše, NTFS spravuje fragmentáciu súborov lepšie než FAT32, čo zvyšuje šance na obnovu. Aj vdaka dennikovaniu dokážu nastroje obnovit neulozene, alebo čiastočne zmazané súbory.
+EXT4: Hoci má zložitejšie mechanizmy obnovy, vďaka denníkovaniu a extents systémom sa dajú dáta efektívne spravovať a obnoviť, ak ešte neboli prepísané. Funkcia delayed allocation môže ale skomplikovať obnovu, keďže pri nahlom výpadku nemusia byt subory uložené, aj keď by už mali byť “
+Slide 5: TestDisk
+„TestDisk je open-source nástroj na obnovu stratených partícií a opravu bootovacích sektorov. Je ideálny pre používateľov, ktorí sa snažia obnoviť stratené alebo zmazané partície a súbory.
+
+Jedna z jeho silných stránok je podpora rôznych súborových systémov, ako FAT32, NTFS a EXT4. Funguje tak, že prehľadáva disk a hľadá neporušené časti dát. TestDisk dokáže opraviť bootovacie sektory a prepisovať zálohy, čo je užitočné pri problémoch s bootovaním.
+
+Proces obnovy zahŕňa skenovanie disku a hľadanie záznamov o zmazaných súboroch v súborových tabuľkách. Ak bloky ešte neboli prepísané, TestDisk ich dokáže zrekonštruovať.“
+
+Slide 6: Recuva
+„Recuva je user friendly nástroj, vyvinutý pre operačný systém Windows. Jeho hlavnou výhodou je jednoduchosť používania, čo z neho robí populárny nástroj pre bežných používateľov. Podporuje súborové systémy NTFS, FAT32.
+
+Recuva dokáže obnoviť súbory z pevných diskov, USB kľúčov, pamäťových kariet a dokonca aj z poškodených zariadení dvoj fazovym skenom. Najprv oskenuje tak zbežne a ak sa nenájde hľadaný vymazaný súbor, Recuva spraví Deep Scan.
+
+a exFAT. Obsahuje funkciu Deep Scan, ktorá prehľadáva disk sektor po sektore a zobrazuje stav súborov – či sú zmazané, poškodené, alebo dostupné na obnovu.
+
+Okrem toho Recuva poskytuje funkciu secure delete, ktorá zaručuje bezpečné a trvalé odstránenie súborov bez možnosti ich obnovy.“
+
+Slide 7: PhotoRec
+„PhotoRec je ďalší open-source nástroj, ktorý sa zameriava na obnovu multimediálnych súborov, ako sú fotografie a videá, no zvláda aj iné typy súborov. Na rozdiel od nástrojov, ktoré pracujú s tabuľkami súborov, PhotoRec hľadá dáta na základe signatúr súborov. To mu umožňuje obnoviť dáta aj z poškodených systémov alebo z diskov, ktoré boli formátované.
+
+PhotoRec podporuje viac ako 480 formátov súborov a je vhodný aj na obnovu dát z CD, DVD a iných úložísk. Jeho hlavnou výhodou je, že dokáže pracovať s diskami, ktoré sú poškodené alebo nečitateľné pre operačný systém.“
+
+Slide 8: Do budúcna
+„každý z nástrojov má svoje silné stránky. TestDisk je univerzálny nástroj na obnovu partícií a bootovacích sektorov, Recuva je jednoduchý a rýchly pre bežné použitie na Windows zariadeniach, a PhotoRec je špecializovaný na multimediálne súbory a poškodené disky.
+
+Do budúcna sa budem venovať experimentom s týmito nástrojmi ale podľa potreby rozšírim aj iné nástroje “

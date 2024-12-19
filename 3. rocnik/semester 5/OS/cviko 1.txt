@@ -1,0 +1,474 @@
+log: xmatuskan pswd: 201020
+----------------------------------------------------------------------------------------------------------------------------------
+CVIKO 1
+----------------------------------------------------------------------------------------------------------------------------------
+man *command* 			# manual
+who				# kto je na servery
+users				# cca to iste ako who
+adduser *meno*			# zaregistrovat pouzivatela
+passwd				# zmenit heslo
+usermod -a -G sudo *meno*	# pridat uzivatela do skupiny sudo
+sudo vim /etc/ssh/sshd_config	# editnut sshd_config> PermitRootLogin yes zmenit na no
+vimtutor !!!
+	v less mozem dat "/" a napisat slovo ktore hladam
+	ked stlacim n tak sa posuvam po najdenych slovach dalej, shift+n sa posuvam naspat
+. (bodka) reprezentuje aktualny subor a mozme to pouzivat v spojeni spustani programov v aktualnom priecinku napriklad ./program
+less 				# precitat subor
+mkdir 				# spravi adresar
+cp				# skopiruje
+touch				# vytvori subor
+rmdir				# vymaze prazdny adresar, s prepinacom -r vymaze rekurzivne aj obsah adresaru
+rm				# vymaze subor
+mv				# presunie subor niekam
+pwd				# print working directory
+----------------------------------------------------------------------------------------------------------------------------------
+CVIKO 2
+----------------------------------------------------------------------------------------------------------------------------------
+sudo apt-get install *hocico*	# nainstaluje nejaky program
+explainshell.com !!!!!!!!! 	# dost dobre pozri si to
+chmod 				# zmeni suborove permissions/bity rwxrwxrwx  - 	prve tri je vlastnik suboru, dalsie je skupina, posledne 				# 						su vsetci ostatni
+				# chmod 777 subor - vsetci mozu vsetko
+				# r - 4, w - 2, x - 1
+				# u - user, g - group, o - others
+				# chmod u+w subor - user pridat write permissions
+				# chmod u+rwx - vsetko pridat vlastnikovi
+				# chmod u-rwx,o+rwx - vlastnikovi zobrat vsetky, ostatnym pridat vsetky prava
+
+chown 				# change owner, alebo skupina; moze robit iba root
+				# sudo chown root:root subor/adresar - zmeni vlastnika na root
+				# nejde to ale rekurzivne takze subory v adresary to nezmeni, takze treba prepinac -R (Recursive)
+
+ln				# vytvori linku, s prepinacom -s to bude symbolicka linka
+				# bez prepinaca vytvori hard linku, existuju s takym istym id, ukazuju na presne miesto na disku
+				# aj ked sa presunie subor, alebo zmaze subor, linky budu stale fungovat rovnako
+man				# ma viacero sekcii, man *sekcia* *prikaz*, check man man
+apropos				# prehladava manual
+wc				# spocita slova v subore
+find				# hlada subory v hierarchii adresarov
+				# find /home/xmatuskan -empty(prazdne subory) -type f(hladat iba subory, nie adresare
+				# su tam aj prepinace -or -and napr. find /home/xmatuskan -empty -or -type f (prazdne alebo regularne 					  subory)
+				# -size prepinac podla velkosti bude hladat v Bytes
+				# -exec pozriet na doma !!!!!!!!!
+				# find /public/testovaci_adresar/ -type f -exec wc -l {} \;
+----------------------------------------------------------------------------------------------------------------------------------
+CVIKO 3
+----------------------------------------------------------------------------------------------------------------------------------
+cat				# spaja subory a vypise ich
+write				# napisat spravu ostatnym
+tree				# vypisat stromovu strukturu adresarov
+**********************************************************************************************************************************
+grep				# ide riadok po riadku v subore pr.: grep x users.txt //najde vsetky riadky kde je x
+				# ak by sme dali "^" tak hlada vyraz na zaciatku riadku pr.: grep ^x users.txt
+				# "." znamena hocico, "*" znamena hocikolko krat(kvantifikator) //grep '^x.*' users.txt
+				# grep ^.a matchne napriklad xba alebo xbaaaaa lebo x je na zaciatku riadku, b je hocico a potom je a
+				# '$' je koniec riadku, '?' hlada 0 az 1x vyskyt(je tame alebo nieje tam //ale funguje egrep lebo to su 				#  rozsirene hladanie
+				# egrep '^x.?[abcd]' - xa - match; xb - match atd
+				# egrep '^x.?[^abcd] - vsetko okrem abcd
+				# egrep '^x.?[A-z]$' - x[hocico][jedno pismeno hocijake] - match
+				-----------------------------------------------------------------------
+				# https://cheatography.com/davechild/cheat-sheets/regular-expressions/
+				-----------------------------------------------------------------------
+				# egrep '[[:digit:]]' hlada cisielka
+				# egrep '(ab.*){3}' - hlada vyskyt aspon 3x ababab ale kedze to bude po riadkoch tak najde aj abababab
+				# -F prepinac doslova hlada vyraz v '[vyraz]'
+				# -i prepinac ignore case (velke a male pismena)
+				# -v hlada vsetko okrem toho vyrazu
+				# -c kolko riadkov najde s vyskytom vyrazu
+
+| (pipe)			# stardantny vystup commandu posle druhemu prikazu
+				# vystup | posle_sem
+
+cut 				# cut -d : -f 5 /etc/passwd | grep -v '^$'
+tr				# zmeni charakter z prveho setu na druhy set
+				# cut -d : -f 5,7 /etc/passwd | tr ':' ' '
+df, du si kukni!!!!
+df-reportne informacie o systeme suborov/vyuzitie miesta na disku
+du-informacie o spotrebe uloziska suborov
+dokonci ulohu doma ze vypis z who maju byt na ip adresach 30-39 cisla
+who | egrep '\(.*\b3[0-9]\b'
+----------------------------------------------------------------------------------------------------------------------------------
+CVIKO 4
+----------------------------------------------------------------------------------------------------------------------------------
+>				# presmerovanie do subor //who > who.txt
+<				# zo suboru da do prikazu //grep a < who.txt
+last				# last logged in user
+tail				# vypise poslednu cast suboru //tail -n 5 a.txt (poslednych 5 riadkov vypise)
+head				# prva cast suboru
+uniq				# vedla seba nasledujuce rovnake riadky mergne dokopy
+sort				# abecedne zoradi
+// last | head -n -2 | cut -d ' ' -f1 | grep -v '^reboot$' | sort | uniq | wc -l
+rev				# otoci input naopak // kokot -> tokok
+//last | head -n -2 | grep -v '^reboot\>' | tr -s ' ' | sort -t ' ' -k 1 | rev | uniq -f 9 | rev
+//shell scripty pocheckuj co robia
+//check keywords 5
+----------------------------------------------------------------------------------------------------------------------------------
+CVIKO 5
+----------------------------------------------------------------------------------------------------------------------------------
+kw5.txt
+--
+procesor - časť systému určená na postupné spracúvanie vstupov na výstupy
+inštrukcia - základná operácia pre procesor
+atomickosť inštrukcie - nedelitelnosť (znamená že sa vykoná naraz a nemôže byť prerušená a dokončená pozdejšie)
+prerušenie - procesor preruší vykonávanie postupnosti inštrukcií, vykoná nejakú obsluhu prerušenia a potom pokračuje v predchádzajúcej 		     činnosti
+program - postupnosť príkazov, ktorou určujeme, ako má počítač riešiť úlohu
+proces - bežiaca inštancia programu
+pamäť - ukladanie a čítanie informácií alebo údajov
+spolocna pamat - miesto, kde môžu vlákna navzájom komunikovať a synchronizovať sa
+synchronizácia(procesov) - je technika riadeného usporiadania vzájomne spolupracujúcich procesov.
+prostriedok - 
+vzájomné vylučovanie - aby sa dve úlohy nevykonávali "súčasne"
+kritická oblasť - je časť programu, v ktorom proces pristupuje ku zdieľanému prostriedku.
+podmienky na riešenie vzájomného vylučovania :
+						- V KO môže byť najviac 1 proces
+						- Rýchlosť a počet CPU sa nesmie brať do úvahy
+						- Proces mimo KO nesmie brániť inému procesu vstupovať do KO
+						- Čas čakania procesu na vstup do KO musí byť konečný
+vstupný a výstupný protokol - pravidlá riadiace syntax, sémantiku a synchronizáciu komunikácie
+--
+TEST
+:: pozriet aj prednasky aj cvicenia
+:: z oboch tam bude
+--
+spravit skript/one-liner do suboru zapisat vsetky procesy ktore bezia na aktualnom stroji a zapisat do suboru, kt sa vola *aktualny cas a datum*
+// ps -A | tail -n +2 | tr -s " " | cut -d ' ' -f5 > "$( date ).txt"
+> prepíše; >> appendne
+find 2> a.txt			# zapise chybove vystupy do suboru, ak chceme aby to zmizlo tak to zapiseme do /dev/null
+/public/priklady		# skripty ktore si poskusaj (bolo by)
+"#" pocet, napr mam nejaky zoznam tak vypise pocet prvkov
+echo ${#zoznam[@]} - zavinac vsetky prvky zoberie, # vypise pocet
+echo ${zoznam[@]} - vypise vsetky prvky
+----------------------------------------------------------------------------------------------------------------------------------
+CVIKO 6
+----------------------------------------------------------------------------------------------------------------------------------
+awk
+
+DOMACA ULOHA
+awk.txt uloha 3 a uloha 4
+
+uloha 3
+awk '{ data += $10 } {if (($13 == "(iPhone;") || ($15 == "Android")) sum += 1; if (($13 == "(iPhone;") || ($15 == "Android")) mobile_data += $10; } END { print "percentage of mobile requests:", (sum/NR)*100, "%"; print "percentage of data:", (data/mobile_data)*100, "%" }' access.log
+
+uloha 4
+awk '{if ($9 ~ /^[45][0-9][0-9]$/) bad_requests[$7]++; } END { max_url = ""; max_count = 0; for (url in bad_requests) { if (bad_requests[url] > max_count) { max_url = url; max_count = bad_requests[url]; }} print "most bad requests from:", max_url, "count:", max_count; }' access.log
+----------------------------------------------------------------------------------------------------------------------------------
+CVIKO 7
+----------------------------------------------------------------------------------------------------------------------------------
+skipnute :( preberal sa sed.txt v public/priklady/
+----------------------------------------------------------------------------------------------------------------------------------
+CVIKO 8
+----------------------------------------------------------------------------------------------------------------------------------
+signaly
+DOMACA ULOHA
+tri ulohy posledne okrem bonusu v subore signaly.txt
+
+1.Upravte skript losovac.sh tak aby ulozil svoje PID do /tmp/losovac.PID a v pripade, ze je ukonceny (aj necakane), musi po sebe tento subor zmazat.
+
+#!/bin/bash
+
+echo "Losovac caka na vyzvu k losovaniu."
+
+function losuj() {
+    echo -n $(($RANDOM%10+1))
+}
+
+function cleanup() {
+    rm -f /tmp/losovac.PID
+    exit
+}
+
+echo $$ > /tmp/losovac.PID
+
+trap 'cleanup' SIGTERM SIGINT
+
+trap 'losuj' USR1
+
+while :; do
+    sleep infinity &
+    wait
+    kill -9 $!
+    wait $! 2> /dev/null
+    echo " je vylosovane cislo"
+done
+
+2.Upravte skript vyberac.sh tak aby identifikoval PID losovac.sh podla obsahu /tmp/losovac.PID.
+#!/bin/bash
+echo
+echo "PID vyberaca je $$"
+
+if [ -f /tmp/losovac.PID ]; then
+    tmp=$(cat /tmp/losovac.PID)
+    echo "PID losovaca je $tmp"
+else
+    echo "Subor /tmp/losovac.PID nebol najdeny. Spustam losovac.sh."
+    ./losovac.sh &
+    tmp=$!
+    echo $$ > /tmp/losovac.PID
+    echo "PID losovaca je $tmp"
+fi
+
+trap 'kill -9 $tmp' SIGINT
+
+while :; do
+    # skuste zakomentovat nasledujuci sleep a zistite ci program bude losovat rychlejsie
+    sleep 5
+    echo
+    echo "Volam losovaca..."
+    kill -USR1 $tmp
+    sleep 5
+done
+
+3.Upravte losovac.sh tak, aby vytvoril pomenovanu ruru (named pipe, FIFO) /tmp/losovac.PID a pri posielal losovane cislo do nej. Upravte vyberac.sh tak, ze z pomenovanej rury precita vylosovane cislo. Losovac by mal po sebe ruru opat poupratovat.
+losovac.sh
+#!/bin/bash
+
+echo "Losovac caka na vyzvu k losovaniu."
+
+# Vytvoření pojmenované roury
+fifo=/tmp/losovac.PID
+mkfifo $fifo
+
+# Funkce pro losování
+function losuj() {
+    echo $(($RANDOM%10+1)) > $fifo
+}
+
+# Funkce pro čištění při ukončení
+function cleanup() {
+    echo "Mazu $fifo a ukoncuji proces."
+    rm -f $fifo
+    exit
+}
+
+# Nastavení trap pro SIGTERM a SIGINT
+trap 'cleanup' SIGTERM SIGINT
+
+# Původní trap pro losování
+trap 'losuj' USR1
+
+while :; do
+    sleep infinity &
+    wait
+    kill -9 $!
+    wait $! 2> /dev/null
+done
+
+vyberac.sh
+#!/bin/bash
+echo
+echo "PID vyberaca je $$"
+
+# Načtení PID losovac.sh z /tmp/losovac.PID
+fifo=/tmp/losovac.PID
+if [ ! -p $fifo ]; then
+    echo "Pojmenovaná roura $fifo nenalezena. Spouštím losovac.sh."
+    ./losovac.sh &
+fi
+
+trap 'kill -9 $(cat /tmp/losovac.PID)' SIGINT
+
+while :; do
+    sleep 5
+    echo
+    echo "Volam losovaca..."
+    kill -USR1 $(cat /tmp/losovac.PID)
+
+    if read line <$fifo; then
+        echo "Vylosovane cislo: $line"
+    fi
+
+    sleep 5
+done
+
+----------------------------------------------------------------------------------------------------------------------------------
+CVIKO 10
+----------------------------------------------------------------------------------------------------------------------------------
+Trestná úloha:
+to co bolo na ulohu z 9. spravit pomocou monitorov, nie semaforov
+co bolo na ulohu?
+
+uloha z 9. tyzdna na signaly:
+
+P1         P5
+  \       /
+   P3---P4
+  /       \
+P2         P6
+
+#include <pthread.h>
+#include <semaphore.h>
+
+#include "os_base.h"
+
+sem_t p1_p2_done;
+sem_t p3_done;
+
+void* P1(void *args)
+{
+    OS_WORK();
+    OS_SEM_UP(p1_p2_done); // Signal completion of P1
+}
+
+void* P2(void *args)
+{
+    OS_WORK();
+    OS_SEM_UP(p1_p2_done); // Signal completion of P2
+}
+
+void* P3(void *args)
+{
+    OS_SEM_DOWN(p1_p2_done); // Wait for both P1 and P2 to complete
+    OS_SEM_DOWN(p1_p2_done);
+    OS_WORK();
+    OS_SEM_UP(p3_done); // Signal completion of P3
+}
+
+void* P4(void *args)
+{
+    OS_SEM_DOWN(p3_done); // Wait for P3 to complete
+    OS_WORK();
+}
+
+void* P5(void *args)
+{
+    OS_WORK();
+}
+
+void* P6(void *args)
+{
+    OS_WORK();
+}
+
+int main (int argc, char * argv[])
+{
+    pthread_t p1, p2, p3, p4, p5, p6;
+
+    os_base_init(TRUE, TRUE);
+
+    OS_SEM_INIT(p1_p2_done, 0);
+    OS_SEM_INIT(p3_done, 0);
+
+    pthread_create(&p6, NULL, P6, NULL);
+    pthread_create(&p5, NULL, P5, NULL);
+    pthread_create(&p4, NULL, P4, NULL);
+    pthread_create(&p3, NULL, P3, NULL);
+    pthread_create(&p2, NULL, P2, NULL);
+    pthread_create(&p1, NULL, P1, NULL);
+
+    pthread_join(p1, NULL);
+    pthread_join(p2, NULL);
+    pthread_join(p3, NULL);
+    pthread_join(p4, NULL);
+    pthread_join(p5, NULL);
+    pthread_join(p6, NULL);
+
+    OS_SEM_DESTROY(p1_p2_done);
+    OS_SEM_DESTROY(p3_done);
+
+    os_base_destroy();
+
+    return 0;
+}
+
+Trestná úloha:
+
+#include <pthread.h>
+#include <stdio.h>
+
+pthread_mutex_t mutex;
+pthread_cond_t cond_p1_p2_done;
+pthread_cond_t cond_p3_done;
+
+int p1_done = 0;
+int p2_done = 0;
+int p3_done = 0;
+
+void* P1(void *args)
+{
+    // Do work
+    pthread_mutex_lock(&mutex);
+    p1_done = 1;
+    pthread_cond_signal(&cond_p1_p2_done); // Signal that P1 is done
+    pthread_mutex_unlock(&mutex);
+}
+
+void* P2(void *args)
+{
+    // Do work
+    pthread_mutex_lock(&mutex);
+    p2_done = 1;
+    pthread_cond_signal(&cond_p1_p2_done); // Signal that P2 is done
+    pthread_mutex_unlock(&mutex);
+}
+
+void* P3(void *args)
+{
+    pthread_mutex_lock(&mutex);
+    while (!p1_done || !p2_done) {
+        pthread_cond_wait(&cond_p1_p2_done, &mutex); // Wait for both P1 and P2
+    }
+    pthread_mutex_unlock(&mutex);
+
+    // Do work
+
+    pthread_mutex_lock(&mutex);
+    p3_done = 1;
+    pthread_cond_signal(&cond_p3_done); // Signal that P3 is done
+    pthread_mutex_unlock(&mutex);
+}
+
+void* P4(void *args)
+{
+    pthread_mutex_lock(&mutex);
+    while (!p3_done) {
+        pthread_cond_wait(&cond_p3_done, &mutex); // Wait for P3
+    }
+    pthread_mutex_unlock(&mutex);
+
+    // Do work
+}
+
+void* P5(void *args)
+{
+    // Do work
+}
+
+void* P6(void *args)
+{
+    // Do work
+}
+
+int main (int argc, char * argv[])
+{
+    pthread_t p1, p2, p3, p4, p5, p6;
+
+    pthread_mutex_init(&mutex, NULL);
+    pthread_cond_init(&cond_p1_p2_done, NULL);
+    pthread_cond_init(&cond_p3_done, NULL);
+
+    pthread_create(&p1, NULL, P1, NULL);
+    pthread_create(&p2, NULL, P2, NULL);
+    pthread_create(&p3, NULL, P3, NULL);
+    pthread_create(&p4, NULL, P4, NULL);
+    pthread_create(&p5, NULL, P5, NULL);
+    pthread_create(&p6, NULL, P6, NULL);
+
+    pthread_join(p1, NULL);
+    pthread_join(p2, NULL);
+    pthread_join(p3, NULL);
+    pthread_join(p4, NULL);
+    pthread_join(p5, NULL);
+    pthread_join(p6, NULL);
+
+    pthread_mutex_destroy(&mutex);
+    pthread_cond_destroy(&cond_p1_p2_done);
+    pthread_cond_destroy(&cond_p3_done);
+
+    return 0;
+}
+
+-------------------------------------------------------------------------
+CVIKO 12
+-------------------------------------------------------------------------
+32kb*(30+10+1/16*20) = 1320ms
+32kb*(30+10+4/32*20) = 680ms
+6 - 6 => A

@@ -1,0 +1,36 @@
+read 99	//nacitanie cisla, o ktorom overujeme, ci je prvoc.
+load 99	//nacitanie cisla do acc
+
+div =2	
+store 98	
+
+jzero is_bad	//ochrana pred 0 a 1
+
+//cycle
+
+begin:
+	load 98
+	sub =1		//ochrana pred tym, aby sme skusali prvociselnost jednotkou
+
+	jzero end
+
+	load 99
+	div 98
+	mul 98
+
+	sub 99
+
+	jzero is_bad
+	jump is_good
+	is_bad:n
+		reject	
+		halt
+	is_good:
+		load 98
+		sub =1
+		store 98
+	jump begin
+end:
+
+accept
+halt

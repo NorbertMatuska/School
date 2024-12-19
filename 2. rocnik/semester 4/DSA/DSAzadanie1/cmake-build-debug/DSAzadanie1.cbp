@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="DSAzadanie1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/program files/CLion 2023.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/program files/CLion 2023.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/program files/CLion 2023.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/program files/CLion 2023.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DSAzadanie1">
+				<Option output="C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/DSAzadanie1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/program files/CLion 2023.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/Makefile&quot;  VERBOSE=1 DSAzadanie1"/>
+					<CompileFile command="D:/program files/CLion 2023.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/program files/CLion 2023.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/program files/CLion 2023.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DSAzadanie1/fast">
+				<Option output="C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/DSAzadanie1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="D:/program files/CLion 2023.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/program files/CLion 2023.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/Makefile&quot;  VERBOSE=1 DSAzadanie1/fast"/>
+					<CompileFile command="D:/program files/CLion 2023.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/program files/CLion 2023.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/program files/CLion 2023.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/program files/CLion 2023.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/program files/CLion 2023.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/program files/CLion 2023.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/program files/CLion 2023.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/program files/CLion 2023.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/program files/CLion 2023.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/program files/CLion 2023.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/program files/CLion 2023.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/ChainHash.c">
+			<Option target="DSAzadanie1"/>
+		</Unit>
+		<Unit filename="C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/ChainHash.h">
+			<Option target="DSAzadanie1"/>
+		</Unit>
+		<Unit filename="C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/LinearHash.c">
+			<Option target="DSAzadanie1"/>
+		</Unit>
+		<Unit filename="C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/LinearHash.h">
+			<Option target="DSAzadanie1"/>
+		</Unit>
+		<Unit filename="C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/SplayTree1.c">
+			<Option target="DSAzadanie1"/>
+		</Unit>
+		<Unit filename="C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/SplayTree1.h">
+			<Option target="DSAzadanie1"/>
+		</Unit>
+		<Unit filename="C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/main.c">
+			<Option target="DSAzadanie1"/>
+		</Unit>
+		<Unit filename="C:/Users/matus/Desktop/skola/2. rocnik/semester 4/DSA/DSAzadanie1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

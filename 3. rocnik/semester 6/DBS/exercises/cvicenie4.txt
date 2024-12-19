@@ -1,0 +1,118 @@
+1.
+SELECT
+    ROUND(AVG(CURRENT_DATE - signed_in_at)) AS average_registration_days
+FROM
+    programmers;
+
+2.
+
+3.
+SELECT
+    p.id,
+    p.name,
+    COUNT(DISTINCT pp.programmer_id) AS programmer_count
+FROM
+    projects p
+JOIN
+    projects_programmers pp ON p.id = pp.project_id
+GROUP BY
+    p.id, p.name
+ORDER BY
+    p.id;
+4.
+SELECT
+    p.name AS project_name,
+    SUM(CURRENT_DATE - pp.joined_at) AS total_days
+FROM
+    projects p
+JOIN
+    projects_programmers pp ON p.id = pp.project_id
+GROUP BY
+    p.name;
+5.
+WITH ProgrammerCounts AS (
+  SELECT
+    p.id,
+    p.name,
+    COUNT(DISTINCT pp.programmer_id) AS programmer_count
+  FROM
+    projects p
+  JOIN
+    projects_programmers pp ON p.id = pp.project_id
+  GROUP BY
+    p.id, p.name
+)
+SELECT
+  id,
+  name,
+  programmer_count
+FROM
+  ProgrammerCounts
+WHERE
+  programmer_count = (SELECT MAX(programmer_count) FROM ProgrammerCounts)
+ORDER BY
+  name
+LIMIT 1;
+6.
+WITH ProgrammerCounts AS (
+  SELECT
+    p.id,
+    p.name,
+    COUNT(DISTINCT pp.programmer_id) AS programmer_count
+  FROM
+    projects p
+  JOIN
+    projects_programmers pp ON p.id = pp.project_id
+  GROUP BY
+    p.id, p.name
+)
+SELECT
+  id,
+  name,
+  programmer_count
+FROM
+  ProgrammerCounts
+WHERE
+  programmer_count = (SELECT MAX(programmer_count) FROM ProgrammerCounts)
+
+7.
+SELECT
+    l.label,
+    COUNT(DISTINCT pp.programmer_id) AS programmer_count
+FROM
+    languages l
+JOIN
+    projects p ON l.id = p.language_id
+JOIN
+    projects_programmers pp ON p.id = pp.project_id
+GROUP BY
+    l.label
+ORDER BY
+    programmer_count DESC;
+8.
+SELECT
+    l.label,
+    COALESCE(
+        (SELECT p.name
+         FROM projects p
+         WHERE p.language_id = l.id
+         ORDER BY p.created_at
+         LIMIT 1),
+        'no project yet'
+    ) AS project_name
+FROM
+    languages l
+ORDER BY
+    l.label;
+9.
+SELECT
+    l.label AS language_name,
+    COUNT(p.id) AS project_count
+FROM
+    languages l
+LEFT JOIN
+    projects p ON l.id = p.language_id
+GROUP BY
+    l.label
+ORDER BY
+    2 DESC, 1;

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>TOWER DEFENSE</title>
+</head>
+<body>
+    <canvas></canvas>
+    <script src="game.js" async></script>
+    <div class="Menu" id="Menu">
+      <div class="Containermenu">
+        <div id="menuOptions">
+          <div><button id="startButton">PLAY</button></div>
+          <div><button id="optionsbutton">OPTIONS</button></div>
+        </div>
+      </div>
+      <button id="audioButton" value="PLAY" onclick="play()"></button>
+        <audio id="sound" src='sound.mp3'></audio>
+    </div>
+    <div class="instMenu" id="modalIMenu">
+      <div class="instMenuContainer">
+        
+        <div id="instOptions">
+            <div id="insn">OPTIONS</div>
+        </div>
+
+
+        <div class="combats">
+            <div class="textcombat">CUTE COMBAT UNITS:</div>
+            <img class="snowman" src="snowman.png">
+            <img class="icecube" src="icecube.png">
+            <img class="snowflake" src="snowflake.png">
+        </div>
+        <div class="enemies">
+            <div class="textenemies">BAD ENEMIES:</div>
+            <img class="flames" src="flames.png">
+            
+        </div>
+        <button class="back" id="backButton">BACK</button>
+      </div>
+    </div>
+
+    <div class="levels" id="levels">
+      <div class="level_container"> 
+        <h1>LEVELS</h1>
+        <button class="levelone" id="level1"><a href="first_level.html">1</a></button>      
+      </div>
+    </div>
+
+    <div class="playarea" id="playfield">
+      <div class="first_level"> 
+        <h1>FIRST LEVEL</h1>
+        
+      </div>
+    </div>
+    
+    <div class="gameover" id="gameover">
+      <div class="gameOverContainer"> 
+        <h1>Game Over</h1>
+        <button class="playButton" id="retryButton">Retry</button>
+        <button class="homeButton" id="homeButton">Menu</button>
+      </div>
+    </div>
+</body>
+</html>
+
+

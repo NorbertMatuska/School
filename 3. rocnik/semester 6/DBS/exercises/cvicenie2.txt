@@ -1,0 +1,34 @@
+1.
+SELECT firstname FROM players
+2.
+SELECT name FROM teams WHERE salary > 70000
+3.
+SELECT name FROM teams WHERE salary > 70000 AND owner = 'Dusan'
+4.
+SELECT firstname, lastname FROM players
+INNER JOIN player_statistics ON players.id = player_statistics.player_id
+5.
+SELECT firstname, seasons.name FROM players
+INNER JOIN player_statistics ON players.id = player_statistics.player_id
+INNER JOIN seasons ON seasons.id = player_statistics.season_id
+6.
+SELECT firstname, seasons.name, (player_statistics.goals + player_statistics.assists) AS points FROM players
+INNER JOIN player_statistics ON players.id = player_statistics.player_id
+INNER JOIN seasons ON seasons.id = player_statistics.season_id
+7.
+SELECT firstname, 
+COALESCE(seasons.name, 'no season') AS season_name, 
+COALESCE((player_statistics.goals + player_statistics.assists), 0) AS points 
+FROM players
+LEFT JOIN player_statistics ON players.id = player_statistics.player_id
+LEFT JOIN seasons ON seasons.id = player_statistics.season_id
+8.
+SELECT players.firstname, teams.name FROM players
+INNER JOIN player_statistics ON players.id = player_statistics.player_id
+INNER JOIN teams ON player_statistics.team_id = teams.id
+9.
+SELECT players.firstname, teams.name FROM players
+INNER JOIN player_statistics ON players.id = player_statistics.player_id
+INNER JOIN teams ON player_statistics.team_id = teams.id
+ORDER BY teams.name
+10.
